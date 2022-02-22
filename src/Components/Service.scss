@@ -1,0 +1,102 @@
+.service {
+  padding: 120px 0;
+  padding-bottom: 30px;
+  .container {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    .serviceBox {
+      width: 30%;
+      margin: 1%;
+      height: 285px;
+      margin-bottom: 90px;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      .contain {
+        width: 285px;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        height: 285px;
+        &.plain {
+          align-items: flex-start;
+        }
+        &.boxDesign {
+          background: #e3f3ff;
+          h3 {
+            background: -webkit-linear-gradient(
+              135deg,
+              #68c0ff 0%,
+              #074269 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+        &.boxWeb {
+          background: rgba(159, 196, 3, 0.08);
+          h3 {
+            background: -webkit-linear-gradient(
+              135deg,
+              #92ffc0 0%,
+              #002661 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+        &.boxGraph {
+          background: #fff1ea;
+          h3 {
+            background: -webkit-linear-gradient(
+              135deg,
+              #ff9d6c 0%,
+              #bb4e75 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+        &.boxSocial {
+          background: #fffaeb;
+          h3 {
+            background: -webkit-linear-gradient(
+              135deg,
+              #fd6e6a 0%,
+              #ffc600 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+        &.boxVid {
+          background: #edf7ff;
+          h3 {
+            background: -webkit-linear-gradient(
+              135deg,
+              #68c0ff 0%,
+              #074269 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+      p {
+        margin-bottom: 43px;
+      }
+      h3 {
+        font-size: 26px;
+        line-height: 39px;
+        margin-top: 50px;
+        margin-bottom: 0;
+        text-align: center;
+      }
+    }
+  }
+}

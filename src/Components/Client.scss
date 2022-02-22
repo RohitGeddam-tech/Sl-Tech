@@ -1,0 +1,39 @@
+.client {
+  background: linear-gradient(
+    258.18deg,
+    #e3f3ff 0.86%,
+    rgba(227, 243, 255, 0) 98.72%
+  );
+  padding: 80px 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    .clientDetails {
+      padding-top: 65px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .clientBox {
+        display: flex;
+        flex-direction: column;
+        width: 48%;
+        align-self: flex-start;
+        justify-content: flex-start;
+        h3 {
+          margin: 0;
+          padding: 16px 0 4px 0;
+        }
+        p {
+          font-size: 18px;
+          line-height: 27px;
+        }
+      }
+    }
+    .bottom {
+      padding-top: 80px;
+    }
+  }
+}
