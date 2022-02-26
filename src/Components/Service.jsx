@@ -25,33 +25,46 @@ const Service = () => {
         </div>
         <div className="serviceBox">
           <div className="contain boxDesign">
+            <div className="boxHover"></div>
             <img src={design} alt="Web Design" />
             <h3>Web Design</h3>
           </div>
         </div>
         <div className="serviceBox">
           <div className="contain boxWeb">
+            <div className="boxHover"></div>
             <img src={web} alt="Web Development" />
             <h3>Web Development</h3>
           </div>
         </div>
         <div className="serviceBox">
           <div className="contain boxGraph">
+            <div className="boxHover"></div>
             <img src={graph} alt="Graphic Design" />
             <h3>Graphic Design</h3>
           </div>
         </div>
         <div className="serviceBox">
           <div className="contain boxSocial">
+            <div className="boxHover"></div>
             <img src={social} alt="Social Media Marketing" />
             <h3>Social Media Marketing</h3>
           </div>
         </div>
         <div className="serviceBox">
           <div className="contain boxVid">
+            <div className="boxHover"></div>
             <img src={vid} alt="Video Animation" />
             <h3>Video Animation</h3>
           </div>
+        </div>
+        <div className="bottom">
+          <button className="btn blueBtn">
+            Learn More{" "}
+            <span>
+              <img src={white} alt="whiteArrow" />
+            </span>
+          </button>
         </div>
       </div>
     </div>

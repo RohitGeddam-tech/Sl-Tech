@@ -1,10 +1,16 @@
 .service {
-  padding: 120px 0;
-  padding-bottom: 30px;
   .container {
     display: flex;
     align-items: center;
     flex-flow: row wrap;
+    padding: 120px 0;
+    padding-bottom: 30px;
+    .bottom {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
     .serviceBox {
       width: 30%;
       margin: 1%;
@@ -21,10 +27,23 @@
         flex-flow: column;
         align-items: center;
         justify-content: center;
-        border-radius: 10px;
+        border-radius: 0px;
         height: 285px;
+        position: relative;
+        .boxHover {
+          position: absolute;
+          display: none;
+          width: 285px;
+          height: 285px;
+          border: 2px dashed #074269;
+          box-sizing: border-box;
+          transform: matrix(1, -0.05, 0.05, 1, 0, 0);
+        }
         &.plain {
           align-items: flex-start;
+          .boxHover{
+            display: none;
+          }
         }
         &.boxDesign {
           background: #e3f3ff;
@@ -36,6 +55,11 @@
             );
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+          }
+          &:hover{
+            .boxHover{
+              display: block;
+            }
           }
         }
         &.boxWeb {
@@ -49,6 +73,12 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
+          &:hover{
+            .boxHover{
+              display: block;
+              border: 2px dashed #074269;
+            }
+          }
         }
         &.boxGraph {
           background: #fff1ea;
@@ -60,6 +90,12 @@
             );
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+          }
+          &:hover{
+            .boxHover{
+              display: block;
+              border: 2px dashed #D44638;
+            }
           }
         }
         &.boxSocial {
@@ -73,6 +109,12 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
+          &:hover{
+            .boxHover{
+              display: block;
+              border: 2px dashed #FF9D6C;
+            }
+          }
         }
         &.boxVid {
           background: #edf7ff;
@@ -85,6 +127,12 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
+          &:hover{
+            .boxHover{
+              display: block;
+              border: 2px dashed #074269;
+            }
+          }
         }
       }
       p {
@@ -96,6 +144,72 @@
         margin-top: 50px;
         margin-bottom: 0;
         text-align: center;
+      }
+    }
+    @media (max-width: 1160px) {
+      .serviceBox {
+        width: 48%;
+      }
+    }
+    @media (max-width: 730px) {
+      padding: 60px 0;
+      .bottom {
+        display: flex;
+        .btn {
+          span img {
+            width: auto;
+            height: auto;
+            padding-left: 0;
+          }
+        }
+      }
+      .serviceBox {
+        width: 100%;
+        margin-bottom: 30px;
+        height: fit-content;
+        .contain {
+          width: 100%;
+          flex-flow: row;
+          height: 100px;
+          padding: 0;
+          justify-content: flex-start;
+          .boxHover {
+            display: none !important;
+          }
+          &.plain {
+            flex-flow: column;
+            height: max-content;
+            justify-content: center;
+            align-items: center;
+            h2 {
+              font-size: 32px;
+              line-height: 48px;
+              text-align: center;
+            }
+            p {
+              text-align: center;
+              margin-bottom: 0px;
+            }
+            .btn {
+              display: none;
+              span img {
+                width: auto;
+                height: auto;
+                padding-left: 0;
+              }
+            }
+          }
+          img {
+            width: 65px;
+            padding-left: 30px;
+          }
+          h3 {
+            font-size: 22px;
+            line-height: 30px;
+            padding-left: 24px;
+            margin: 0;
+          }
+        }
       }
     }
   }

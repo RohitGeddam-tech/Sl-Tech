@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import address from "../images/location.png";
-import mail from "../images/email.png";
-import call from "../images/call1.png";
+import address from "../images/location.svg";
+import mail from "../images/email.svg";
+import call from "../images/call1.svg";
 import "./Footer.scss";
 import Popup from "../Components/Modal";
 
@@ -10,6 +10,7 @@ const Footer = () => {
   const [emailInvalid, setEmailInvalid] = useState(false);
   const [invalid, setInvalid] = useState(false);
   const [valid, setValid] = useState(false);
+  const [hover, setHover] = useState(false);
   const handleChange = (e) => {
     setEmail(e.target.value);
     setEmailInvalid(!e.target.validity.valid);
@@ -29,7 +30,11 @@ const Footer = () => {
         <div className="boxa">
           <h2>Want to talk business?</h2>
           <div className="touch">
-            <div className={`textInput ${invalid ? "errorInput" : ""}`}>
+            <div
+              className={`textInput ${invalid ? "errorInput" : ""} ${
+                hover ? "bordHover" : ""
+              }`}
+            >
               <input
                 className="input"
                 value={email}
@@ -48,36 +53,41 @@ const Footer = () => {
                 </p>
               ) : null}
             </div>
-            <button className="btn" onClick={handleSubmit}>
+            <button
+              className="btn"
+              onClick={handleSubmit}
+              onMouseEnter={() => setHover(true)}
+              onMouseLeave={() => setHover(false)}
+            >
               Get in touch
             </button>
           </div>
         </div>
         <div className="boxb">
           <h2>You can directly reach out to us at :</h2>
-          <div className="box">
+          <a href="mailto:contact@sugarlogger.com" className="box">
             <img src={mail} alt="mail" />
             <div className="data">
-              <a href="mailto:contact@sugarlogger.com">
+              <p>
                 contact@sugarlogger.com
-              </a>
+              </p>
             </div>
-          </div>
-          <div className="box">
+          </a>
+          <a href="tel:+919372705287" className="box">
             <img src={call} alt="call" />
             <div className="data">
-              <a href="tel:+919372705287">IND: +91 93727 05287</a>
+              <p>IND: +91 93727 05287</p>
             </div>
-          </div>
-          <div className="box">
+          </a>
+          <a href="https://goo.gl/maps/Vx76H45CFb1Wriou6" className="box">
             <img src={address} alt="address" />
             <div className="data">
-              <a href="https://goo.gl/maps/cMDFYUvGfRDm8Pej7">
+              <p>
                 Kanakia Zillion, 205 & 206, 2nd Floor, B Wing, LBS Rd, Kurla
                 West, Mumbai, Maharashtra 400070
-              </a>
+              </p>
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <div className="footerMenu">

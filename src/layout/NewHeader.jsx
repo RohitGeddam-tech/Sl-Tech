@@ -23,22 +23,25 @@ const NewHeader = () => {
                 </NavLink>
               </div>
             </nav>
-            <div className="nav-links">
-              {isActive ? (
-                <>
-                  <XHam
+            <div className="end">
+              <a href="tel:++919372705287" className="btn">Call Us</a>
+              <div className="nav-links">
+                {isActive ? (
+                  <>
+                    <XHam
+                      ClickHandle={() => {
+                        setActive(!isActive);
+                      }}
+                    />
+                  </>
+                ) : (
+                  <Ham
                     ClickHandle={() => {
                       setActive(!isActive);
                     }}
                   />
-                </>
-              ) : (
-                <Ham
-                  ClickHandle={() => {
-                    setActive(!isActive);
-                  }}
-                />
-              )}
+                )}
+              </div>
             </div>
           </div>
           <div className={side}>
@@ -106,7 +109,11 @@ const NewHeader = () => {
       ) : (
         <>
           <div className="container">
-            <NavLink to="/#top" className="logo" onClick={() => setActive(false)}>
+            <NavLink
+              to="/#top"
+              className="logo"
+              onClick={() => setActive(false)}
+            >
               <img src={logo} alt="logo" onClick={() => setActive(false)} />
               {/* <h2 className="logo">SL Technologies</h2> */}
             </NavLink>

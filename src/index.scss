@@ -9,6 +9,11 @@ body {
     width: 85%;
     margin: 0 auto;
   }
+  @media (max-width: 600px) {
+    .container {
+      width: 92%;
+    }
+  }
   a {
     text-decoration: none;
     font-family: "Poppins", sans-serif;
@@ -64,6 +69,67 @@ body {
     color: #708ca0;
     margin: 0;
   }
+  @media (max-width: 730px) {
+    p {
+      font-size: 18px;
+      line-height: 27px;
+    }
+    h2 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+    h3 {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+
+  .slickPrev {
+    position: absolute;
+    display: block !important;
+    width: 27px;
+    height: 22px;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    right: 45px;
+    top: -39px;
+    left: auto;
+    img {
+      width: 27px !important;
+      height: 22px !important;
+      filter: brightness(0) saturate(100%) invert(20%) sepia(48%)
+        saturate(1098%) hue-rotate(166deg) brightness(102%) contrast(102%);
+    }
+    &.slick-disabled {
+      img {
+        cursor: not-allowed;
+        filter: brightness(0) saturate(100%) invert(80%) sepia(29%)
+          saturate(119%) hue-rotate(161deg) brightness(107%) contrast(104%);
+      }
+    }
+  }
+
+  .slickNext {
+    position: absolute;
+    display: block !important;
+    width: 27px;
+    height: 22px;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    right: 0;
+    top: -39px;
+    img {
+      width: 27px !important;
+      height: 22px !important;
+    }
+  }
+
   .btn {
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -79,14 +145,26 @@ body {
     border: none;
     cursor: pointer;
     outline: none;
+    &:hover {
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
+      background-color: #ffe976;
+    }
     &.emptyBtn {
       font-weight: normal !important;
       color: #708ca0 !important;
       background-color: #f3f5f7 !important;
+      &:hover {
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
+        background-color: #f3f5f7;
+      }
     }
     &.blueBtn {
       color: #ffffff !important;
       background-color: #68c0ff !important;
+      &:hover {
+        filter: none;
+        background-color: #32a9ff !important;
+      }
     }
     span {
       margin-left: 8px;
@@ -280,8 +358,38 @@ body {
   .react-responsive-modal-modal {
     border-radius: 10px !important;
     padding: 0 !important;
-    button{
+    button {
       outline: none;
+    }
+    .thanks {
+      padding: 48px;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      h3 {
+        margin: 0;
+        margin-bottom: 12px;
+      }
+      p {
+        text-align: center;
+        width: 90%;
+      }
+      .bottom {
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .blueBtn {
+          margin-left: 15px;
+        }
+      }
+      @media (max-width: 730px) {
+        padding: 48px 12px;
+        .btn{
+          padding: 8px 16px;
+        }
+      }
     }
     .popup {
       // max-width: 700px;
@@ -310,13 +418,21 @@ body {
           .inputCheck {
             width: max-content;
             margin-right: 30px;
+            margin-bottom: 8px;
             cursor: pointer;
-            &:last-child{
+            &:last-child {
               margin-right: 0;
             }
             .input[type="checkbox"] {
               cursor: pointer;
+              margin: 0;
               margin-right: 12px;
+              width: 24px;
+              height: 24px;
+              vertical-align:top;
+              border: 1px solid #9dadbe;
+              box-sizing: border-box;
+              border-radius: 4px;
             }
             label {
               font-weight: normal;
@@ -335,6 +451,12 @@ body {
           .emptyBtn {
             margin-right: 15px;
           }
+        }
+      }
+      @media (max-width: 730px) {
+        padding: 35px 20px;
+        .btn {
+          padding: 8px 16px;
         }
       }
     }

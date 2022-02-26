@@ -4,12 +4,12 @@
     #e3f3ff 0.86%,
     rgba(227, 243, 255, 0) 98.72%
   );
-  padding: 80px 0;
   .container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
+    padding: 80px 0;
     .clientDetails {
       padding-top: 65px;
       width: 100%;
@@ -19,7 +19,8 @@
       .clientBox {
         display: flex;
         flex-direction: column;
-        width: 48%;
+        padding: 12px;
+        width: 46%;
         align-self: flex-start;
         justify-content: flex-start;
         h3 {
@@ -30,10 +31,38 @@
           font-size: 18px;
           line-height: 27px;
         }
+        &:hover {
+          background: #ffffff;
+          border-radius: 10px;
+          cursor: pointer;
+          h3{
+            color: #68C0FF;
+            text-decoration: underline;
+            text-decoration-color: #68C0FF;
+          }
+        }
       }
     }
     .bottom {
       padding-top: 80px;
+    }
+    @media (max-width: 700px) {
+      padding: 50px 0;
+      .clientDetails {
+        flex-flow: column;
+        padding-top: 40px;
+        .clientBox {
+          width: 95%;
+          margin-bottom: 40px;
+          p {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+      .bottom {
+        padding-top: 0;
+      }
     }
   }
 }

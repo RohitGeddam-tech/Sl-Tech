@@ -28,8 +28,94 @@
               .textInput {
                 margin-right: 10px;
               }
+              .bordHover {
+                label{
+                  color: #708CA0;
+                }
+                .input {
+                  border: 1px solid #7d7c81;
+                }
+              }
               .btn {
                 margin-top: 8px;
+              }
+            }
+          }
+        }
+        @media (max-width: 1200px) {
+          .container {
+            .bannerBox {
+              width: 58%;
+            }
+            img {
+              width: 40%;
+            }
+          }
+        }
+        @media (max-width: 1010px) {
+          .container {
+            .bannerBox {
+              width: 62%;
+            }
+            img {
+              width: 36%;
+            }
+          }
+        }
+        @media (max-width: 930px) {
+          .container {
+            width: 600px;
+            flex-flow: column;
+            .bannerBox {
+              width: 100%;
+              order: 2;
+              display: flex;
+              align-items: flex-start;
+              flex-flow: column;
+              justify-content: center;
+              h1,
+              p {
+                text-align: start;
+              }
+            }
+            img {
+              width: 100%;
+              order: 1;
+              margin-bottom: 30px;
+            }
+          }
+        }
+        @media (max-width: 680px) {
+          .container {
+            width: 92%;
+            flex-flow: column;
+            padding: 50px 0;
+            .bannerBox {
+              h1 {
+                font-size: 30px;
+                line-height: 45px;
+              }
+              p {
+                font-size: 18px;
+                line-height: 27px;
+                margin-bottom: 16px;
+              }
+              .bottom {
+                width: 100%;
+                .touch {
+                  width: 100%;
+                  flex-flow: column;
+                  align-items: center;
+                  .textInput {
+                    width: 100%;
+                  }
+                  .btn {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  }
+                }
               }
             }
           }

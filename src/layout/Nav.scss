@@ -81,15 +81,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .end{
+      display: flex;
+      align-items: center;
+      .btn{
+        padding: 6px 18px;
+        margin-right: 16px;
+      }
+    }
   }
 
   .container-fullnav {
-    width: 98%;
+    width: max-content;
     display: flex;
     margin: auto;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
+    margin-left: 0 !important;
     justify-content: space-between;
+    .nav-image{
+      width: 170px;
+      margin-top: 3px;
+      img{
+        width: 100%;
+      }
+    }
   }
 
   .nav-image {

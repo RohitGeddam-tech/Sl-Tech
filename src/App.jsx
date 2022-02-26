@@ -2,7 +2,8 @@ import "./App.scss";
 import BannerSlider from "./Components/Banner";
 import Client from "./Components/Client";
 import Service from "./Components/Service";
-import Test from "./Components/Test";
+// import Test from "./Components/Test";
+import Testimonial from "./Components/Testimonial";
 import Footer from "./layout/Footer";
 import NewHeader from "./layout/NewHeader";
 
@@ -14,7 +15,8 @@ function App() {
         <BannerSlider />
         <Service />
         <Client />
-        <Test />
+        {/* <Test /> */}
+        <Testimonial />
       </div>
       <Footer />
     </div>

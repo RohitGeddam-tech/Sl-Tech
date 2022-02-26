@@ -11,6 +11,7 @@ const BannerSlider = () => {
   const [emailInvalid, setEmailInvalid] = useState(false);
   const [invalid, setInvalid] = useState(false);
   const [valid, setValid] = useState(false);
+  const [hover, setHover] = useState(false);
   const handleChange = (e) => {
     setEmail(e.target.value);
     setEmailInvalid(!e.target.validity.valid);
@@ -44,7 +45,11 @@ const BannerSlider = () => {
                 </p>
                 <div className="bottom">
                   <div className="touch">
-                    <div className={`textInput ${invalid ? "errorInput" : ""}`}>
+                    <div
+                      className={`textInput ${invalid ? "errorInput" : ""} ${
+                        hover ? "bordHover" : ""
+                      }`}
+                    >
                       <input
                         className="input"
                         value={email}
@@ -64,7 +69,12 @@ const BannerSlider = () => {
                         </p>
                       ) : null}
                     </div>
-                    <button onClick={handleSubmit} className="btn">
+                    <button
+                      onClick={handleSubmit}
+                      onMouseEnter={() => setHover(true)}
+                      onMouseLeave={() => setHover(false)}
+                      className="btn"
+                    >
                       Get in touch
                     </button>
                   </div>
