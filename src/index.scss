@@ -128,6 +128,13 @@ body {
       width: 27px !important;
       height: 22px !important;
     }
+    &.slick-disabled {
+      img {
+        cursor: not-allowed;
+        filter: brightness(0) saturate(100%) invert(80%) sepia(29%)
+          saturate(119%) hue-rotate(161deg) brightness(107%) contrast(104%);
+      }
+    }
   }
 
   .btn {
