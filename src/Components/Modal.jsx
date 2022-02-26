@@ -67,25 +67,26 @@ const Popup = ({ Open, Close }) => {
   };
 
   const handleSubmit = () => {
-    if (state.length < 0) {
+    if (state.length <= 0) {
       setStateInvalid(true);
     } else {
       setStateInvalid(false);
     }
     if (!(nameInvalid || phoneInvalid) && state.length > 0) {
-      console.log(name, phone, state, text);
+      // console.log(name, phone, state, text);
       setShow(true);
       Close(false);
-    } else {
-      console.log("error");
-    }
+    } 
+    // else {
+    //   console.log("error");
+    // }
   };
 
-  React.useEffect(() => {
-    if (state.length > 0) {
-      console.log(state);
-    }
-  }, [state]);
+  // React.useEffect(() => {
+  //   if (state.length > 0) {
+  //     console.log(state);
+  //   }
+  // }, [state]);
 
   return (
     <>

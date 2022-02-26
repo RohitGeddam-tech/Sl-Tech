@@ -10,7 +10,7 @@ const Footer = () => {
   const [emailInvalid, setEmailInvalid] = useState(false);
   const [invalid, setInvalid] = useState(false);
   const [valid, setValid] = useState(false);
-  const [hover, setHover] = useState(false);
+  // const [hover, setHover] = useState(false);
   const handleChange = (e) => {
     setEmail(e.target.value);
     setEmailInvalid(!e.target.validity.valid);
@@ -30,11 +30,7 @@ const Footer = () => {
         <div className="boxa">
           <h2>Want to talk business?</h2>
           <div className="touch">
-            <div
-              className={`textInput ${invalid ? "errorInput" : ""} ${
-                hover ? "bordHover" : ""
-              }`}
-            >
+            <div className={`textInput ${invalid ? "errorInput" : ""}`}>
               <input
                 className="input"
                 value={email}
@@ -53,12 +49,7 @@ const Footer = () => {
                 </p>
               ) : null}
             </div>
-            <button
-              className="btn"
-              onClick={handleSubmit}
-              onMouseEnter={() => setHover(true)}
-              onMouseLeave={() => setHover(false)}
-            >
+            <button className="btn" onClick={handleSubmit}>
               Get in touch
             </button>
           </div>
@@ -68,9 +59,7 @@ const Footer = () => {
           <a href="mailto:contact@sugarlogger.com" className="box">
             <img src={mail} alt="mail" />
             <div className="data">
-              <p>
-                contact@sugarlogger.com
-              </p>
+              <p>contact@sugarlogger.com</p>
             </div>
           </a>
           <a href="tel:+919372705287" className="box">

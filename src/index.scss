@@ -204,6 +204,17 @@ body {
     position: relative;
     padding: 0;
     display: block;
+    &:hover {
+      label {
+        color: #708ca0;
+      }
+      .input {
+        border: 1px solid #7d7c81;
+      }
+      textarea.textfield {
+        border: 1px solid #7d7c81;
+      }
+    }
     .error-text {
       text-align: start;
       color: #fd6e6a !important;
@@ -369,6 +380,7 @@ body {
       outline: none;
     }
     .thanks {
+      max-width: 500px;
       padding: 48px;
       display: flex;
       flex-flow: column;
@@ -377,10 +389,14 @@ body {
       h3 {
         margin: 0;
         margin-bottom: 12px;
+        font-size: 24px;
+        line-height: 36px;
       }
       p {
         text-align: center;
         width: 90%;
+        font-size: 18px;
+        line-height: 27px;
       }
       .bottom {
         padding-top: 30px;
@@ -393,7 +409,7 @@ body {
       }
       @media (max-width: 730px) {
         padding: 48px 12px;
-        .btn{
+        .btn {
           padding: 8px 16px;
         }
       }
@@ -422,6 +438,16 @@ body {
           flex-flow: row wrap;
           padding-bottom: 12px;
           width: 100%;
+          .error-text {
+            text-align: start;
+            color: #fd6e6a !important;
+            font-size: 12px !important;
+            line-height: 14px !important;
+            margin: 0 !important;
+            padding-bottom: 5px;
+            padding-left: 0;
+            padding-top: 5px;
+          }
           .inputCheck {
             width: max-content;
             margin-right: 30px;
@@ -436,7 +462,7 @@ body {
               margin-right: 12px;
               width: 24px;
               height: 24px;
-              vertical-align:top;
+              vertical-align: top;
               border: 1px solid #9dadbe;
               box-sizing: border-box;
               border-radius: 4px;
