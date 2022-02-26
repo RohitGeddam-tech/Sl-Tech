@@ -3,7 +3,7 @@ import prev from "../images/arrowLeft.svg";
 
 const SliderPrevArrow = (props) => {
   const { onClick } = props;
-  console.log(props);
+  // console.log(props);
 
   return (
     <button
