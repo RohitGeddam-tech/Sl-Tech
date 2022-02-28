@@ -68,7 +68,7 @@
   }
   @media (min-width: 1400px) {
     .container {
-      width: 1200px !important;
+      width: 1280px !important;
       .navDetails {
         margin-right: -15px;
       }
@@ -89,6 +89,12 @@
         margin-right: 16px;
       }
     }
+    @media(max-width:350px){
+      .btn{
+        padding: 6px 9px !important;
+        margin-right: 6px !important;
+      }
+    }
   }
 
   .container-fullnav {
@@ -104,6 +110,16 @@
       margin-top: 3px;
       img{
         width: 100%;
+      }
+    }
+    @media(max-width:350px){
+      width: 50%;
+      .nav-image{
+        width: 100%;
+        margin-top: 3px;
+        img{
+          width: 100%;
+        }
       }
     }
   }

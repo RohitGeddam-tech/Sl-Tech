@@ -34,6 +34,9 @@
           border-radius: 10px;
           padding: 32px;
           margin: 0 !important;
+          @media(max-width:350px){
+            height: 270px !important;
+          }
           p {
             font-weight: normal;
             font-size: 18px;
@@ -98,6 +101,7 @@
     }
     .slick-slider {
       flex-flow: row;
+      padding-top: 12px !important;
     }
   }
 }

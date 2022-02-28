@@ -24,7 +24,7 @@ const NewHeader = () => {
               </div>
             </nav>
             <div className="end">
-              <a href="tel:++919372705287" className="btn">Call Us</a>
+              <a href="tel:+919372705287" className="btn">Call Us</a>
               <div className="nav-links">
                 {isActive ? (
                   <>
