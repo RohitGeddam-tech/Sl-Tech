@@ -71,5 +71,15 @@
         padding-top: 0;
       }
     }
+    @media (max-width: 420px) {
+      .clientDetails{
+        .clientBox{
+          img{
+            max-width: 362px;
+            max-height: 241px;
+          }
+        }
+      }
+    }
   }
 }
