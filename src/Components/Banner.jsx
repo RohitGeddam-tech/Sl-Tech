@@ -1,17 +1,24 @@
 import React, { useEffect, useState } from "react";
-import lap from "../images/banner1.png";
+import lap from "../images/banner1.webp";
 import "./Banner.scss";
 import Popup from "./Modal";
 import CustomSlider from "./Slider";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const BannerSlider = () => {
   const [email, setEmail] = useState("");
-  const [src, setSrc] = useState("");
+  // const [src, setSrc] = useState("");
   // const [email, setEmail] = useState("");
   const [emailInvalid, setEmailInvalid] = useState(false);
   const [invalid, setInvalid] = useState(false);
   const [valid, setValid] = useState(false);
   // const [hover, setHover] = useState(false);
+
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+  });
+
   const handleChange = (e) => {
     setEmail(e.target.value);
     setEmailInvalid(!e.target.validity.valid);
@@ -26,9 +33,9 @@ const BannerSlider = () => {
     }
   };
 
-  useEffect(() => {
-    setSrc(lap);
-  }, []);
+  // useEffect(() => {
+  //   setSrc(lap);
+  // }, []);
 
   return (
     <div className="bannerSlider">
@@ -36,7 +43,7 @@ const BannerSlider = () => {
         <div>
           <div className="banner">
             <div className="container">
-              <div className="bannerBox">
+              <div className="bannerBox" data-aos="fade-up" data-aos-duration="1500">
                 <h1>Helping you get your business online</h1>
                 <p>
                   Setting up an online presence does not happen overnight. We
@@ -76,7 +83,7 @@ const BannerSlider = () => {
                   </div>
                 </div>
               </div>
-              <img src={src} alt="banner" loading="lazy" />
+              <img src={lap} alt="banner" loading="lazy" />
             </div>
           </div>
         </div>
