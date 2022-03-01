@@ -30,28 +30,28 @@
               align-items: flex-start;
               .textInput {
                 margin-right: 10px;
-                width: 100%;
-                // @media (min-width: 1300px) {
-                //   width: 400px;
-                //   max-width: 400px;
-                // }
-                // @media (min-width: 1200px) {
-                //   width: 300px;
-                //   max-width: 300px;
-                // }
-                // @media (max-width: 1200px) {
-                //   width: 300px;
-                //   max-width: 300px;
-                // }
-                // @media (max-width: 930px) {
-                //   width: 400px;
-                //   max-width: 400px;
-                // }
-                // @media (max-width: 930px) {
-                //   width: 100%;
-                //   max-width: 100%;
-                //   margin-right: 0;
-                // }
+                // width: 100%;
+                @media (min-width: 1300px) {
+                  width: 400px;
+                  max-width: 400px;
+                }
+                @media (min-width: 1200px) {
+                  width: 300px;
+                  max-width: 300px;
+                }
+                @media (max-width: 1200px) {
+                  width: 300px;
+                  max-width: 300px;
+                }
+                @media (max-width: 930px) {
+                  width: 400px;
+                  max-width: 400px;
+                }
+                @media (max-width: 930px) {
+                  width: 100%;
+                  max-width: 100%;
+                  margin-right: 0;
+                }
               }
               .bordHover {
                 label {
