@@ -24,45 +24,48 @@
               line-height: 35px;
               color: #708ca0;
             }
-            .touch {
+            .bottom{
               width: 100%;
-              display: flex;
-              align-items: flex-start;
-              .textInput {
-                margin-right: 10px;
-                // width: 100%;
-                @media (min-width: 1300px) {
-                  width: 400px;
-                  max-width: 400px;
+              .touch {
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+                .textInput {
+                  margin-right: 10px;
+                  // width: 100%;
+                  @media (min-width: 1300px) {
+                    width: 400px;
+                    max-width: 400px;
+                  }
+                  @media (min-width: 1200px) {
+                    width: 300px;
+                    max-width: 300px;
+                  }
+                  @media (max-width: 1200px) {
+                    width: 300px;
+                    max-width: 300px;
+                  }
+                  @media (max-width: 930px) {
+                    width: 400px;
+                    max-width: 400px;
+                  }
+                  @media (max-width: 680px) {
+                    width: 100%;
+                    max-width: 100%;
+                    margin-right: 0;
+                  }
                 }
-                @media (min-width: 1200px) {
-                  width: 300px;
-                  max-width: 300px;
+                .bordHover {
+                  label {
+                    color: #708ca0;
+                  }
+                  .input {
+                    border: 1px solid #7d7c81;
+                  }
                 }
-                @media (max-width: 1200px) {
-                  width: 300px;
-                  max-width: 300px;
+                .btn {
+                  margin-top: 8px;
                 }
-                @media (max-width: 930px) {
-                  width: 400px;
-                  max-width: 400px;
-                }
-                @media (max-width: 930px) {
-                  width: 100%;
-                  max-width: 100%;
-                  margin-right: 0;
-                }
-              }
-              .bordHover {
-                label {
-                  color: #708ca0;
-                }
-                .input {
-                  border: 1px solid #7d7c81;
-                }
-              }
-              .btn {
-                margin-top: 8px;
               }
             }
           }
