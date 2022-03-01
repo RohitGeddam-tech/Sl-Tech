@@ -71,6 +71,26 @@
         padding-top: 0;
       }
     }
+    // @media (max-width: 420px) {
+    //   .clientDetails{
+    //     .clientBox{
+    //       padding: 0;
+    //       img{
+    //         max-width: 362px;
+    //         max-height: 241px;
+    //       }
+    //       &:hover {
+    //         background: transparent;
+    //         border-radius: 10px;
+    //         cursor: pointer;
+    //         h3{
+    //           color: #074269;
+    //           text-decoration: none;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
     @media (max-width: 420px) {
       .clientDetails{
         .clientBox{
