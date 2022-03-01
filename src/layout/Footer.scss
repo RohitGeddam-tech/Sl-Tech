@@ -166,7 +166,7 @@
         }
       }
     }
-    @media (max-width: 1100px) {
+    @media (max-width: 1130px) {
       .boxa {
         width: 54%;
         .touch {
@@ -175,6 +175,7 @@
           align-items: center;
           .textInput {
             width: 100%;
+            margin-right: 0;
           }
           .bordHover {
             label {
