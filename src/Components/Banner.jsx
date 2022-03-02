@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import lap from "../images/banner1.webp";
 import "./Banner.scss";
 import Popup from "./Modal";
 import CustomSlider from "./Slider";
-import Aos from "aos";
-import "aos/dist/aos.css";
+// import Aos from "aos";
+// import "aos/dist/aos.css";
 
 const BannerSlider = () => {
   const [email, setEmail] = useState("");
@@ -15,9 +15,9 @@ const BannerSlider = () => {
   const [valid, setValid] = useState(false);
   // const [hover, setHover] = useState(false);
 
-  useEffect(() => {
-    Aos.init({ duration: 500 });
-  });
+  // useEffect(() => {
+  //   Aos.init({ duration: 500 });
+  // });
 
   const handleChange = (e) => {
     setEmail(e.target.value);
@@ -43,7 +43,7 @@ const BannerSlider = () => {
         <div>
           <div className="banner">
             <div className="container">
-              <div className="bannerBox" data-aos="fade-up" data-aos-duration="1500">
+              <div className="bannerBox">
                 <h1>Helping you get your business online</h1>
                 <p>
                   Setting up an online presence does not happen overnight. We

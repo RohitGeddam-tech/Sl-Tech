@@ -21,12 +21,13 @@ const Client = () => {
         <p data-aos="fade-up" data-aos-duration="1500">
           View some of our latest work
         </p>
-        <div
-          className="clientDetails"
-          data-aos="fade-up"
-          data-aos-duration="1500"
-        >
-          <a href="https://www.docbel.in/" className="clientBox">
+        <div className="clientDetails">
+          <a
+            href="https://www.docbel.in/"
+            className="clientBox"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <img src={docbel} alt="Docbel Health" />
             <h3>Docbel Health</h3>
             <p>
@@ -34,7 +35,12 @@ const Client = () => {
               platform.
             </p>
           </a>
-          <a href="https://rohitgeddam-tech.github.io/Mirana/" className="clientBox">
+          <a
+            href="https://rohitgeddam-tech.github.io/Mirana/"
+            className="clientBox"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <img src={mirana} alt="Mirana Resort" />
             <h3>Mirana Resort</h3>
             <p>
@@ -48,7 +54,12 @@ const Client = () => {
           data-aos="fade-up"
           data-aos-duration="1500"
         >
-          <a href="http://dev.shycosafe.com/" className="clientBox">
+          <a
+            href="http://dev.shycosafe.com/"
+            className="clientBox"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <img src={shycosafe} alt="Shycosafe" />
             <h3>Shycosafe</h3>
             <p>
@@ -56,7 +67,12 @@ const Client = () => {
               Shycosafe.
             </p>
           </a>
-          <a href="/#top" className="clientBox">
+          <a
+            href="/#top"
+            className="clientBox"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <img src={rnr} alt="Blogs - Research & Ranking" />
             <h3>Blogs - Research & Ranking</h3>
             <p>
