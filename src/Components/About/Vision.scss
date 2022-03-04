@@ -1,0 +1,45 @@
+.vision {
+  width: 100%;
+  .container {
+    padding: 120px 0 150px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    .visionBox {
+      width: 31%;
+      //   width: 300px;
+      //   margin-right: 70px;
+      //   padding-top: 50px;
+      &.a {
+        margin-right: 0;
+      }
+      img {
+        width: 100px;
+      }
+      .visionData {
+        padding-top: 15px;
+        h1 {
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 45px;
+          margin-top: 0;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 20px;
+          line-height: 30px;
+          margin: 0;
+        }
+      }
+    }
+    @media (max-width: 1000px) {
+      justify-content: center;
+      padding: 30px 0 90px;
+      .visionBox {
+        padding-top: 60px;
+        width: 100%;
+      }
+    }
+  }
+}

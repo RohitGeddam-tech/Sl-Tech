@@ -1,0 +1,169 @@
+.servBody {
+  width: 100%;
+  .container {
+    padding: 110px 0;
+    padding-bottom: 0;
+    .fullBody {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      .bodyLeft {
+        // width: max-content;
+        width: 265px;
+        .imgClass {
+          width: 265px;
+          img {
+            width: 90px;
+          }
+          p {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 45px;
+            margin-top: 10px;
+            &.Web.Design {
+              background: -webkit-linear-gradient(
+                135deg,
+                #68c0ff 0%,
+                #074269 100%
+              );
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+            &.Development {
+              background: -webkit-linear-gradient(
+                135deg,
+                #92ffc0 0%,
+                #002661 100%
+              );
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+            &.Graphic {
+              background: -webkit-linear-gradient(
+                135deg,
+                #ff9d6c 0%,
+                #bb4e75 100%
+              );
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+            &.Social {
+              background: -webkit-linear-gradient(
+                135deg,
+                #fd6e6a 0%,
+                #ffc600 100%
+              );
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+            &.Video {
+              background: -webkit-linear-gradient(
+                135deg,
+                #68c0ff 0%,
+                #074269 100%
+              );
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+        }
+      }
+      .bodyRight {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        width: 74%;
+        .bodyDetails {
+          padding: 110px 0;
+          width: 100%;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          &.a {
+            padding-top: 0px;
+          }
+          .bodyBox {
+            width: 48%;
+            &.UI,
+            &.UX {
+              margin-top: -20px;
+            }
+            h1 {
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 36px;
+              color: #074269;
+              margin: 0;
+              margin-bottom: 10px;
+            }
+            p {
+              font-weight: normal;
+              font-size: 20px;
+              line-height: 30px;
+              color: #708ca0;
+              margin: 0;
+            }
+          }
+        }
+      }
+      @media (max-width: 1000px) {
+        flex-flow: column;
+        .bodyLeft {
+          width: 98%;
+          .imgClass {
+            width: 100%;
+            padding-top: 100px;
+          }
+        }
+        .bodyRight {
+          width: 98%;
+          .bodyDetails {
+            padding: 20px 0;
+            padding-bottom: 0;
+            &.a {
+              padding: 0;
+              padding-top: 60px;
+            }
+            .bodyBox {
+              &.UI,
+              &.UX {
+                margin-top: 0;
+              }
+            }
+          }
+        }
+      }
+      @media (max-width: 700px) {
+        flex-flow: column;
+        .bodyLeft {
+          .imgClass {
+            padding: 0 !important;
+          }
+        }
+        .bodyRight {
+          width: 98%;
+          padding: 15px 0;
+          padding-bottom: 70px;
+          .bodyDetails {
+            padding: 0;
+            flex-flow: column;
+            &.a {
+              padding: 0;
+            }
+            .bodyBox {
+              width: 100%;
+              padding: 50px 0;
+              padding-top: 0;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 700px) {
+      padding: 90px 0;
+      padding-bottom: 0;
+    }
+  }
+}

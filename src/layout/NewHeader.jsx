@@ -60,6 +60,7 @@ const NewHeader = () => {
                   to="/#top"
                   className="navfade"
                   onClick={() => setActive(false)}
+                  exact
                 >
                   Home
                 </NavLink>
@@ -112,9 +113,8 @@ const NewHeader = () => {
             <NavLink
               to="/#top"
               className="logo"
-              onClick={() => setActive(false)}
             >
-              <img src={logo} alt="logo" onClick={() => setActive(false)} />
+              <img src={logo} alt="logo"/>
               {/* <h2 className="logo">SL Technologies</h2> */}
             </NavLink>
             <div className="navDetails">
@@ -122,7 +122,7 @@ const NewHeader = () => {
                 to="/#top"
                 activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
                 className="navfade"
-                onClick={() => setActive(false)}
+                exact
               >
                 Home
               </NavLink>
@@ -130,7 +130,6 @@ const NewHeader = () => {
                 to="/Service#top"
                 activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
                 className="navfade"
-                onClick={() => setActive(false)}
               >
                 Services
               </NavLink>
@@ -138,7 +137,6 @@ const NewHeader = () => {
                 to="/Client#top"
                 activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
                 className="navfade"
-                onClick={() => setActive(false)}
               >
                 Clients
               </NavLink>
@@ -146,7 +144,6 @@ const NewHeader = () => {
                 to="/About#top"
                 activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
                 className="navfade"
-                onClick={() => setActive(false)}
               >
                 About Us
               </NavLink>
@@ -154,7 +151,6 @@ const NewHeader = () => {
                 to="/Contact#top"
                 activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
                 className="btn"
-                onClick={() => setActive(false)}
               >
                 Contact Us
               </NavLink>

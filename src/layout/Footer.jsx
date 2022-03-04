@@ -33,6 +33,7 @@ const Footer = () => {
             <div className={`textInput ${invalid ? "errorInput" : ""}`}>
               <input
                 className="input"
+                id="bannerCta"
                 value={email}
                 type="email"
                 name="email"
