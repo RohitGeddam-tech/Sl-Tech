@@ -5,6 +5,7 @@ import useWindowSize from "./useWindowSize";
 import Ham from "./Hamburger";
 import XHam from "./Xham";
 import logo from "../images/logo.png";
+import { NavHashLink } from "react-router-hash-link";
 
 const NewHeader = () => {
   const [width] = useWindowSize();
@@ -17,10 +18,10 @@ const NewHeader = () => {
           <div className="header">
             <nav className="container-fullnav">
               <div className="nav-image">
-                <NavLink to="/#top" onClick={() => setActive(false)}>
+                <NavHashLink to="/#top" onClick={() => setActive(false)}>
                   <img src={logo} alt="logo" />
                   {/* <h2 className="logo">SL Technologies</h2> */}
-                </NavLink>
+                </NavHashLink>
               </div>
             </nav>
             <div className="end">
@@ -56,44 +57,44 @@ const NewHeader = () => {
                 </NavHashLink>
               </li> */}
               <li>
-                <NavLink
+                <NavHashLink
                   to="/#top"
                   className="navfade"
                   onClick={() => setActive(false)}
                   exact
                 >
                   Home
-                </NavLink>
+                </NavHashLink>
               </li>
               <li>
-                <NavLink
+                <NavHashLink
                   to="/Service"
                   className="navfade"
                   onClick={() => setActive(false)}
                 >
                   Services
-                </NavLink>
+                </NavHashLink>
               </li>
               <li>
-                <NavLink
+                <NavHashLink
                   to="/Client"
                   className="navfade"
                   onClick={() => setActive(false)}
                 >
                   Clients
-                </NavLink>
+                </NavHashLink>
               </li>
               <li>
-                <NavLink
+                <NavHashLink
                   to="/About#top"
                   className="navfade"
                   onClick={() => setActive(false)}
                 >
                   About Us
-                </NavLink>
+                </NavHashLink>
               </li>
               <li>
-                <NavLink
+                <NavHashLink
                   to="/#contacts"
                   className="btn"
                   onClick={() => {
@@ -102,7 +103,7 @@ const NewHeader = () => {
                   }}
                 >
                   Contact Us
-                </NavLink>
+                </NavHashLink>
               </li>
             </div>
           </div>{" "}
@@ -118,42 +119,42 @@ const NewHeader = () => {
               {/* <h2 className="logo">SL Technologies</h2> */}
             </NavLink>
             <div className="navDetails">
-              <NavLink
+              <NavHashLink
                 to="/#top"
                 activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
                 className="navfade"
                 exact
               >
                 Home
-              </NavLink>
-              <NavLink
+              </NavHashLink>
+              <NavHashLink
                 to="/Service#top"
                 activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
                 className="navfade"
               >
                 Services
-              </NavLink>
-              <NavLink
+              </NavHashLink>
+              <NavHashLink
                 to="/Client#top"
                 activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
                 className="navfade"
               >
                 Clients
-              </NavLink>
-              <NavLink
+              </NavHashLink>
+              <NavHashLink
                 to="/About#top"
                 activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
                 className="navfade"
               >
                 About Us
-              </NavLink>
-              <NavLink
+              </NavHashLink>
+              <NavHashLink
                 to="/Contact#top"
                 activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
                 className="btn"
               >
                 Contact Us
-              </NavLink>
+              </NavHashLink>
             </div>
           </div>
         </>

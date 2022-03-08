@@ -1,6 +1,7 @@
 import React from "react";
 import "./BannerAbout.scss";
-import banner from "../../images/aboutBan.png";
+// import banner from "../../images/aboutBan.png";
+import banner from "../../images/aboutBanner.png";
 
 const BannerAbout = () => {
   return (

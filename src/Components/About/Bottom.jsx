@@ -2,12 +2,16 @@ import React from "react";
 import "./Bottom.scss";
 import white from "../../images/arrowRightWhite.png";
 import { NavLink } from "react-router-dom";
+import Aos from "aos";
 
 const Bottom = () => {
+  React.useEffect(() => {
+    Aos.init({ duration: 500 });
+  });
   return (
     <>
       <div className="join">
-        <div className="container">
+        <div className="container" data-aos="fade-up" data-aos-duration="1500">
           <h1>Want to join the team?</h1>
           <NavLink to={"/Client#top"} className="btn blueBtn">
             View job openings
@@ -19,7 +23,7 @@ const Bottom = () => {
       </div>
       <div className="view">
         <div className="container">
-          <div className="viewLeft">
+          <div className="viewLeft" data-aos="fade-up" data-aos-duration="1500">
             <h1>View the team’s services</h1>
             <p>
               Lorem ipsum is a placeholder text commonly used to demonstrate the
@@ -32,7 +36,11 @@ const Bottom = () => {
               </span>
             </NavLink>
           </div>
-          <div className="viewRight">
+          <div
+            className="viewRight"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <h1>View the team’s work!</h1>
             <p>
               Lorem ipsum is a placeholder text commonly used to demonstrate the

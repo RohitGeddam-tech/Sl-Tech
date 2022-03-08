@@ -11,6 +11,7 @@ import effects from "../../images/effects.png";
 import ill from "../../images/ill.png";
 import figma from "../../images/figma.png";
 import "./Tech.scss";
+import Aos from "aos";
 
 const data = [
   {
@@ -71,11 +72,16 @@ const data = [
 
 const Tech = () => {
   const [skills, setSkills] = useState("design");
+  React.useEffect(() => {
+    Aos.init({ duration: 500 });
+  });
   return (
     <div className="tech">
       <div className="container">
-        <h2>Our Technology Stack</h2>
-        <div className="techHead">
+        <h2 data-aos="fade-up" data-aos-duration="1500">
+          Our Technology Stack
+        </h2>
+        <div className="techHead" data-aos="fade-up" data-aos-duration="1500">
           <div className="blockTech">
             <button
               className={skills === "design" ? "tabs a activeTab" : "tabs a"}
@@ -92,7 +98,11 @@ const Tech = () => {
           </div>
           <div className="divider"></div>
         </div>
-        <div className="contentTabs">
+        <div
+          className="contentTabs"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           {data.map(({ label, value }) => (
             <div
               className={`content ${label === skills && "active"}`}

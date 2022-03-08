@@ -4,6 +4,7 @@ import mail from "../images/email.svg";
 import call from "../images/call1.svg";
 import "./Footer.scss";
 import Popup from "../Components/Modal";
+import Aos from "aos";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -24,10 +25,14 @@ const Footer = () => {
       setEmail("");
     }
   };
+  React.useEffect(() => {
+    Aos.init({ duration: 500 });
+  });
+
   return (
     <div className="footer">
       <div className="container">
-        <div className="boxa">
+        <div className="boxa" data-aos="fade-up" data-aos-duration="1500">
           <h2>Want to talk business?</h2>
           <div className="touch">
             <div className={`textInput ${invalid ? "errorInput" : ""}`}>
@@ -55,7 +60,7 @@ const Footer = () => {
             </button>
           </div>
         </div>
-        <div className="boxb">
+        <div className="boxb" data-aos="fade-up" data-aos-duration="1500">
           <h2>You can directly reach out to us at :</h2>
           <a href="mailto:contact@sugarlogger.com" className="box">
             <img src={mail} alt="mail" />

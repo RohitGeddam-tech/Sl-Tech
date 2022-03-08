@@ -6,7 +6,6 @@ import shycosafe from "../images/shycosafe.webp";
 import rnr from "../images/rnr.webp";
 import "./Client.scss";
 import Aos from "aos";
-import "aos/dist/aos.css";
 
 const Client = () => {
   React.useEffect(() => {

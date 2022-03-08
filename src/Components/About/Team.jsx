@@ -1,19 +1,30 @@
 import React from "react";
 import data from "./TeamData";
 import "./Team.scss";
+import Aos from "aos";
 
 const Team = () => {
+  React.useEffect(() => {
+    Aos.init({ duration: 500 });
+  });
   return (
     <div className="team">
-      <div className="container">
-        <h1>Meet the team</h1>
-        <p>
+      <div className="container" data-aos="fade-up" data-aos-duration="1500">
+        <h1 data-aos="fade-up" data-aos-duration="1500">
+          Meet the team
+        </h1>
+        <p data-aos="fade-up" data-aos-duration="1500">
           This is our talented team of creative people, managers, and technology
           experts.
         </p>
         <div className="allTeam">
           {data.map((doc) => (
-            <div className={`teamBox ${doc.name}`} key={doc.name}>
+            <div
+              className={`teamBox ${doc.name}`}
+              key={doc.name}
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <img src={doc.img} alt={doc.name} />
               <h1>{doc.name}</h1>
               <span>{doc.title}</span>

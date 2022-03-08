@@ -7,10 +7,17 @@
       width: 100%;
       display: flex;
       align-items: flex-start;
+      position: relative;
       justify-content: space-between;
       .bodyLeft {
         // width: max-content;
         width: 265px;
+        position: sticky;
+        padding-bottom: 120px;
+        top: 70px;
+        // &.fix {
+        //   background-color: red;
+        // }
         .imgClass {
           width: 265px;
           img {
@@ -88,7 +95,15 @@
             width: 48%;
             &.UI,
             &.UX {
-              margin-top: -20px;
+              margin-top: 5px;
+            }
+            &.Interface.Development,
+            &.Backend.Development {
+              margin-top: 47px;
+            }
+            &.Strategy,
+            &.Multi-platform {
+              margin-top: 53px;
             }
             h1 {
               font-weight: 600;
@@ -112,6 +127,9 @@
         flex-flow: column;
         .bodyLeft {
           width: 98%;
+          padding-bottom: 0;
+          background-color: white;
+          top: -30px;
           .imgClass {
             width: 100%;
             padding-top: 100px;
@@ -131,12 +149,21 @@
               &.UX {
                 margin-top: 0;
               }
+              &.Interface.Development,
+              &.Backend.Development {
+                margin-top: 0;
+              }
+              &.Strategy,
+              &.Multi-platform {
+                margin-top: 0;
+              }
             }
           }
         }
       }
       @media (max-width: 700px) {
         flex-flow: column;
+        padding-bottom: 55px;
         .bodyLeft {
           .imgClass {
             padding: 0 !important;
@@ -145,7 +172,7 @@
         .bodyRight {
           width: 98%;
           padding: 15px 0;
-          padding-bottom: 70px;
+          padding-bottom: 0;
           .bodyDetails {
             padding: 0;
             flex-flow: column;
@@ -160,6 +187,9 @@
           }
         }
       }
+    }
+    @media (max-width: 1000px) {
+      padding-top: 0;
     }
     @media (max-width: 700px) {
       padding: 90px 0;

@@ -3,12 +3,16 @@ import "./Vision.scss";
 import vision from "../../images/vision.png";
 import mission from "../../images/mission.png";
 import values from "../../images/values.png";
+import Aos from "aos";
 
 const Vision = () => {
+  React.useEffect(() => {
+    Aos.init({ duration: 500 });
+  });
   return (
     <div className="vision">
       <div className="container">
-        <div className="visionBox">
+        <div className="visionBox" data-aos="fade-up" data-aos-duration="1500">
           <img src={vision} alt="vision" />
           <div className="visionData">
             <h1>Our Vision</h1>
@@ -19,7 +23,7 @@ const Vision = () => {
             </p>
           </div>
         </div>
-        <div className="visionBox">
+        <div className="visionBox" data-aos="fade-up" data-aos-duration="1500">
           <img src={mission} alt="mission" />
           <div className="visionData">
             <h1>Our Mission</h1>
@@ -30,7 +34,11 @@ const Vision = () => {
             </p>
           </div>
         </div>
-        <div className="visionBox a">
+        <div
+          className="visionBox a"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <img src={values} alt="values" />
           <div className="visionData">
             <h1>Our Values</h1>
