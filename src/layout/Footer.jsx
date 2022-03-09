@@ -62,19 +62,34 @@ const Footer = () => {
         </div>
         <div className="boxb" data-aos="fade-up" data-aos-duration="1500">
           <h2>You can directly reach out to us at :</h2>
-          <a href="mailto:contact@sugarlogger.com" className="box">
+          <a
+            href="mailto:contact@sugarlogger.com"
+            className="box"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={mail} alt="mail" />
             <div className="data">
               <p>contact@sugarlogger.com</p>
             </div>
           </a>
-          <a href="tel:+919372705287" className="box">
+          <a
+            href="tel:+919372705287"
+            className="box"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={call} alt="call" />
             <div className="data">
               <p>IND: +91 93727 05287</p>
             </div>
           </a>
-          <a href="https://goo.gl/maps/Vx76H45CFb1Wriou6" className="box">
+          <a
+            href="https://goo.gl/maps/Vx76H45CFb1Wriou6"
+            className="box"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={address} alt="address" />
             <div className="data">
               <p>
@@ -91,22 +106,12 @@ const Footer = () => {
           <div className="footNav">
             <a href="/">About Us</a>
             <a href="/">Our Services</a>
+            <a href="/">Our Careers</a>
             <a href="/">Our Clients</a>
             <a href="/">Privacy Policy</a>
           </div>
         </div>
       </div>
-      {/* <div
-        className="down"
-        style={{ backgroundColor: "#eaedf1", padding: "11px 0" }}
-      >
-        <p>
-          Website by{" "}
-          <a href="https://tech.sugarlogger.com/">
-            Sugarlogger Technologies Pvt. Ltd.
-          </a>
-        </p>
-      </div> */}
       <Popup Open={valid} Close={setValid} />
     </div>
   );

@@ -25,7 +25,9 @@ const NewHeader = () => {
               </div>
             </nav>
             <div className="end">
-              <a href="tel:+919372705287" className="btn">Call Us</a>
+              <a href="tel:+919372705287" className="btn">
+                Call Us
+              </a>
               <div className="nav-links">
                 {isActive ? (
                   <>
@@ -86,6 +88,15 @@ const NewHeader = () => {
               </li>
               <li>
                 <NavHashLink
+                  to="/Client"
+                  className="navfade"
+                  onClick={() => setActive(false)}
+                >
+                  Careers
+                </NavHashLink>
+              </li>
+              <li>
+                <NavHashLink
                   to="/About#top"
                   className="navfade"
                   onClick={() => setActive(false)}
@@ -111,11 +122,8 @@ const NewHeader = () => {
       ) : (
         <>
           <div className="container">
-            <NavLink
-              to="/#top"
-              className="logo"
-            >
-              <img src={logo} alt="logo"/>
+            <NavLink to="/#top" className="logo">
+              <img src={logo} alt="logo" />
               {/* <h2 className="logo">SL Technologies</h2> */}
             </NavLink>
             <div className="navDetails">
@@ -140,6 +148,13 @@ const NewHeader = () => {
                 className="navfade"
               >
                 Clients
+              </NavHashLink>
+              <NavHashLink
+                to="/Client#top"
+                activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
+                className="navfade"
+              >
+                Careers
               </NavHashLink>
               <NavHashLink
                 to="/About#top"

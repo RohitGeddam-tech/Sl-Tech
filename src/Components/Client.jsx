@@ -26,6 +26,8 @@ const Client = () => {
             className="clientBox"
             data-aos="fade-up"
             data-aos-duration="1500"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <img src={docbel} alt="Docbel Health" />
             <h3>Docbel Health</h3>
@@ -39,6 +41,8 @@ const Client = () => {
             className="clientBox"
             data-aos="fade-up"
             data-aos-duration="1500"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <img src={mirana} alt="Mirana Resort" />
             <h3>Mirana Resort</h3>
@@ -58,6 +62,8 @@ const Client = () => {
             className="clientBox"
             data-aos="fade-up"
             data-aos-duration="1500"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <img src={shycosafe} alt="Shycosafe" />
             <h3>Shycosafe</h3>
@@ -71,6 +77,8 @@ const Client = () => {
             className="clientBox"
             data-aos="fade-up"
             data-aos-duration="1500"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <img src={rnr} alt="Blogs - Research & Ranking" />
             <h3>Blogs - Research & Ranking</h3>
