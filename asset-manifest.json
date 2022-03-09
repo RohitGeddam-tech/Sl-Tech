@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Sl-Tech/static/css/main.2090582b.css",
-    "main.js": "/Sl-Tech/static/js/main.161c3857.js",
+    "main.css": "/Sl-Tech/static/css/main.a005bc2b.css",
+    "main.js": "/Sl-Tech/static/js/main.b220ea2d.js",
     "static/media/rohitDop.JPG": "/Sl-Tech/static/media/rohitDop.a3cf862731384b0dee6e.JPG",
+    "static/media/aboutBanner.png": "/Sl-Tech/static/media/aboutBanner.fd45bcbb8dd50eb00fba.png",
     "static/media/jeremy.png": "/Sl-Tech/static/media/jeremy.38a8815953539fe01d84.png",
     "static/media/service.png": "/Sl-Tech/static/media/service.3355b7ac2511add4e73e.png",
-    "static/media/darshan.png": "/Sl-Tech/static/media/darshan.2ce49c178662b15b1223.png",
     "static/media/manish.png": "/Sl-Tech/static/media/manish.6f347937b7664168ffe7.png",
     "static/media/rajsir.png": "/Sl-Tech/static/media/rajsir.70331983cb6b0d9ceebe.png",
     "static/media/kiran.png": "/Sl-Tech/static/media/kiran.6a50a53178b24ddaf225.png",
+    "static/media/darshan2.jpeg": "/Sl-Tech/static/media/darshan2.7f2aa51b98baacb33854.jpeg",
     "static/media/jeet.png": "/Sl-Tech/static/media/jeet.233bddd487c11888835c.png",
     "static/media/anujita.png": "/Sl-Tech/static/media/anujita.7dd9efffbbb2b988417c.png",
     "static/media/banner1.webp": "/Sl-Tech/static/media/banner1.576d4f8918632deb8b66.webp",
-    "static/media/aboutBan.png": "/Sl-Tech/static/media/aboutBan.b1e5def265e00ee4b9be.png",
     "static/media/mirana.webp": "/Sl-Tech/static/media/mirana.bfe40976bbcb8b77eea5.webp",
     "static/media/alok.png": "/Sl-Tech/static/media/alok.650f7ff855be003a3b27.png",
     "static/media/shycosafe.webp": "/Sl-Tech/static/media/shycosafe.0f666bdb88b7ae91e1db.webp",
@@ -33,11 +33,11 @@
     "static/media/email.svg": "/Sl-Tech/static/media/email.34804ad1f66b651f09213b6452e08804.svg",
     "static/media/arrowRight.svg": "/Sl-Tech/static/media/arrowRight.5cc0e721f76598167a81652625000489.svg",
     "index.html": "/Sl-Tech/index.html",
-    "main.2090582b.css.map": "/Sl-Tech/static/css/main.2090582b.css.map",
-    "main.161c3857.js.map": "/Sl-Tech/static/js/main.161c3857.js.map"
+    "main.a005bc2b.css.map": "/Sl-Tech/static/css/main.a005bc2b.css.map",
+    "main.b220ea2d.js.map": "/Sl-Tech/static/js/main.b220ea2d.js.map"
   },
   "entrypoints": [
-    "static/css/main.2090582b.css",
-    "static/js/main.161c3857.js"
+    "static/css/main.a005bc2b.css",
+    "static/js/main.b220ea2d.js"
   ]
 }
