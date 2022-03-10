@@ -1,5 +1,5 @@
 import React from "react";
-import white from "../images/arrowRightWhite.png";
+import white from "../images/arrowRightWhite.svg";
 import docbel from "../images/docbel.webp";
 import mirana from "../images/mirana.webp";
 import shycosafe from "../images/shycosafe.webp";
@@ -14,10 +14,10 @@ const Client = () => {
   return (
     <div className="client">
       <div className="container">
-        <h2 data-aos="fade-up" data-aos-duration="1500">
+        <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           Our Clients
         </h2>
-        <p data-aos="fade-up" data-aos-duration="1500">
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           View some of our latest work
         </p>
         <div className="clientDetails">
@@ -25,7 +25,8 @@ const Client = () => {
             href="https://www.docbel.in/"
             className="clientBox"
             data-aos="fade-up"
-            data-aos-duration="1500"
+            data-aos-duration="1000"
+            data-aos-once="true"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -40,7 +41,8 @@ const Client = () => {
             href="https://rohitgeddam-tech.github.io/Mirana/"
             className="clientBox"
             data-aos="fade-up"
-            data-aos-duration="1500"
+            data-aos-duration="1000"
+            data-aos-once="true"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -52,16 +54,13 @@ const Client = () => {
             </p>
           </a>
         </div>
-        <div
-          className="clientDetails"
-          data-aos="fade-up"
-          data-aos-duration="1500"
-        >
+        <div className="clientDetails">
           <a
             href="http://dev.shycosafe.com/"
             className="clientBox"
             data-aos="fade-up"
-            data-aos-duration="1500"
+            data-aos-duration="1000"
+            data-aos-once="true"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -76,7 +75,8 @@ const Client = () => {
             href="/#top"
             className="clientBox"
             data-aos="fade-up"
-            data-aos-duration="1500"
+            data-aos-duration="1000"
+            data-aos-once="true"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -88,7 +88,12 @@ const Client = () => {
             </p>
           </a>
         </div>
-        <div className="bottom" data-aos="fade-up" data-aos-duration="1500">
+        <div
+          className="bottom"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
           <button className="btn blueBtn">
             View entire portfolio{" "}
             <span>

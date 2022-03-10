@@ -13,11 +13,16 @@ const Testimonial = () => {
   return (
     <div className="test">
       <div className="container">
-        <div className="arrow" data-aos="fade-up" data-aos-duration="1500">
+        <div
+          className="arrow"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
           <h2>Client Testimonials</h2>
           <p>Take a look at what our clients have to say about our work</p>
         </div>
-        <div data-aos="fade-up" data-aos-duration="1500">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <Custom>
             <div className="testBox">
               <p>
@@ -46,11 +51,7 @@ const Testimonial = () => {
               <h5>Saurabh Nayyar</h5>
               <p className="detail">Docbel Health</p>
             </div>
-            <div
-              className="testBox"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
+            <div className="testBox">
               <p>
                 “Lorem ipsum is a placeholder text commonly used to demonstrate
                 the visual form of a document or a typeface without relying on

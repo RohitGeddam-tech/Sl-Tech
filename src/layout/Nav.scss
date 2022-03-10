@@ -44,6 +44,9 @@
         margin-top: 5px;
         color: #fff;
         text-transform: capitalize;
+        &.active{
+          color: #ffdd28;
+        }
         &:hover {
           color: #ffdd28 !important;
           font-weight: bold;

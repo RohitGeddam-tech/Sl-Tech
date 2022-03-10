@@ -7,7 +7,15 @@ const ServiceBody = () => {
     <div className="servBody">
       <div className="container">
         {data.map((doc) => (
-          <div className="fullBody" key={doc.title}>
+          <div
+            className="fullBody"
+            key={doc.title}
+            id={
+              doc.title === "Social Media Marketing"
+                ? "socialmedia"
+                : doc.title.replace(" ", "").toLowerCase()
+            }
+          >
             <div className="bodyLeft">
               <div className="imgClass">
                 <img src={doc.img} alt={doc.title} />

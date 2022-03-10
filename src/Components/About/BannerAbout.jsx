@@ -16,7 +16,7 @@ const BannerAbout = () => {
             online presence.
           </p>
           <div className="bottom">
-            <a href="#bannerCta" className="btn">
+            <a href="#contact" className="btn">
               Get in touch
             </a>
           </div>

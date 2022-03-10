@@ -78,10 +78,10 @@ const Tech = () => {
   return (
     <div className="tech">
       <div className="container">
-        <h2 data-aos="fade-up" data-aos-duration="1500">
+        <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           Our Technology Stack
         </h2>
-        <div className="techHead" data-aos="fade-up" data-aos-duration="1500">
+        <div className="techHead" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <div className="blockTech">
             <button
               className={skills === "design" ? "tabs a activeTab" : "tabs a"}
@@ -101,7 +101,8 @@ const Tech = () => {
         <div
           className="contentTabs"
           data-aos="fade-up"
-          data-aos-duration="1500"
+          data-aos-duration="1000"
+          data-aos-once="true"
         >
           {data.map(({ label, value }) => (
             <div

@@ -15,7 +15,7 @@ const BannerServ = () => {
             online presence.
           </p>
           <div className="bottom">
-            <a href="#bannerCta" className="btn">Get in touch</a>
+            <a href="#contact" className="btn">Get in touch</a>
           </div>
         </div>
         <img src={banner} alt="banner" />

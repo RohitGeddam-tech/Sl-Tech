@@ -88,7 +88,7 @@
     padding: 0 20px;
     padding-bottom: 30px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     .boxa {
       width: 58%;
@@ -196,6 +196,7 @@
     }
     @media (max-width: 900px) {
       flex-flow: column;
+      align-items: center;
       padding: 0;
       padding-bottom: 15px;
       .boxa {
@@ -230,7 +231,7 @@
   }
   @media (min-width: 1020px) {
     .container {
-      width: 85%;
+      width: 88%;
       display: flex;
       justify-content: space-between;
       padding: 50px 0;

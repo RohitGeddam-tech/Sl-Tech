@@ -12,7 +12,12 @@ const Vision = () => {
   return (
     <div className="vision">
       <div className="container">
-        <div className="visionBox" data-aos="fade-up" data-aos-duration="1500">
+        <div
+          className="visionBox"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
           <img src={vision} alt="vision" />
           <div className="visionData">
             <h1>Our Vision</h1>
@@ -23,7 +28,12 @@ const Vision = () => {
             </p>
           </div>
         </div>
-        <div className="visionBox" data-aos="fade-up" data-aos-duration="1500">
+        <div
+          className="visionBox"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
           <img src={mission} alt="mission" />
           <div className="visionData">
             <h1>Our Mission</h1>
@@ -37,7 +47,8 @@ const Vision = () => {
         <div
           className="visionBox a"
           data-aos="fade-up"
-          data-aos-duration="1500"
+          data-aos-duration="1000"
+          data-aos-once="true"
         >
           <img src={values} alt="values" />
           <div className="visionData">

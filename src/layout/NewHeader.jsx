@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Nav.scss";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import useWindowSize from "./useWindowSize";
 import Ham from "./Hamburger";
 import XHam from "./Xham";
@@ -63,15 +63,16 @@ const NewHeader = () => {
                   to="/#top"
                   className="navfade"
                   onClick={() => setActive(false)}
-                  exact
                 >
                   Home
                 </NavHashLink>
               </li>
               <li>
                 <NavHashLink
-                  to="/Service"
-                  className="navfade"
+                  to="/Service#top"
+                  className={`navfade ${
+                    window.location.href.includes("Service") ? "active" : ""
+                  }`}
                   onClick={() => setActive(false)}
                 >
                   Services
@@ -79,26 +80,32 @@ const NewHeader = () => {
               </li>
               <li>
                 <NavHashLink
-                  to="/Client"
-                  className="navfade"
+                  to="/Client#top"
+                  className={`navfade ${
+                    window.location.href.includes("Client") ? "active" : ""
+                  }`}
                   onClick={() => setActive(false)}
                 >
                   Clients
                 </NavHashLink>
               </li>
-              <li>
+              {/* <li>
                 <NavHashLink
-                  to="/Client"
-                  className="navfade"
+                  to="/Career#top"
+                  className={`navfade ${
+                    window.location.href.includes("Career") ? "active" : ""
+                  }`}
                   onClick={() => setActive(false)}
                 >
                   Careers
                 </NavHashLink>
-              </li>
+              </li> */}
               <li>
                 <NavHashLink
                   to="/About#top"
-                  className="navfade"
+                  className={`navfade ${
+                    window.location.href.includes("About") ? "active" : ""
+                  }`}
                   onClick={() => setActive(false)}
                 >
                   About Us
@@ -106,7 +113,7 @@ const NewHeader = () => {
               </li>
               <li>
                 <NavHashLink
-                  to="/#contacts"
+                  to="/#contact"
                   className="btn"
                   onClick={() => {
                     setActive(false);
@@ -122,50 +129,60 @@ const NewHeader = () => {
       ) : (
         <>
           <div className="container">
-            <NavLink to="/#top" className="logo">
+            <NavHashLink to="/#top" className="logo">
               <img src={logo} alt="logo" />
               {/* <h2 className="logo">SL Technologies</h2> */}
-            </NavLink>
+            </NavHashLink>
             <div className="navDetails">
               <NavHashLink
                 to="/#top"
                 activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
                 className="navfade"
-                exact
               >
                 Home
               </NavHashLink>
               <NavHashLink
                 to="/Service#top"
-                activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
-                className="navfade"
+                // activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
+                className={`navfade ${
+                  window.location.href.includes("Service") ? "active" : ""
+                }`}
               >
                 Services
               </NavHashLink>
               <NavHashLink
                 to="/Client#top"
-                activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
-                className="navfade"
+                // activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
+                // className="navfade"
+                className={`navfade ${
+                  window.location.href.includes("Client") ? "active" : ""
+                }`}
               >
                 Clients
               </NavHashLink>
-              <NavHashLink
-                to="/Client#top"
-                activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
-                className="navfade"
+              {/* <NavHashLink
+                to="/Career#top"
+                // activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
+                // className="navfade"
+                className={`navfade ${
+                  window.location.href.includes("Career") ? "active" : ""
+                }`}
               >
                 Careers
-              </NavHashLink>
+              </NavHashLink> */}
               <NavHashLink
                 to="/About#top"
-                activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
-                className="navfade"
+                // activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
+                // className="navfade"
+                className={`navfade ${
+                  window.location.href.includes("About") ? "active" : ""
+                }`}
               >
                 About Us
               </NavHashLink>
               <NavHashLink
-                to="/Contact#top"
-                activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
+                to="/#contact"
+                // activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
                 className="btn"
               >
                 Contact Us
