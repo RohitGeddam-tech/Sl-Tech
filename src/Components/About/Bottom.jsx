@@ -10,7 +10,7 @@ const Bottom = () => {
   });
   return (
     <>
-      <div className="join">
+      {/* <div className="join">
         <div
           className="container"
           data-aos="fade-up"
@@ -25,8 +25,8 @@ const Bottom = () => {
             </span>
           </NavLink>
         </div>
-      </div>
-      {/* <div className="view">
+      </div> */}
+      <div className="view">
         <div className="container">
           <div
             className="viewLeft"
@@ -57,7 +57,7 @@ const Bottom = () => {
               Lorem ipsum is a placeholder text commonly used to demonstrate the
               visual form of a document.
             </p>
-            <NavLink to={"/#top"} className="btn blueBtn">
+            <NavLink to={"/Client#top"} className="btn blueBtn">
               View our portfolio
               <span>
                 <img src={white} alt="whiteArrow" />
@@ -65,7 +65,7 @@ const Bottom = () => {
             </NavLink>
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 };
