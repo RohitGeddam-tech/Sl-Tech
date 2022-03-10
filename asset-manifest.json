@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Sl-Tech/static/css/main.17926571.css",
-    "main.js": "/Sl-Tech/static/js/main.5236dea1.js",
+    "main.css": "/Sl-Tech/static/css/main.92e8a65d.css",
+    "main.js": "/Sl-Tech/static/js/main.9b18d4be.js",
     "static/media/rohitDop.JPG": "/Sl-Tech/static/media/rohitDop.a3cf862731384b0dee6e.JPG",
     "static/media/aboutBanner.png": "/Sl-Tech/static/media/aboutBanner.fd45bcbb8dd50eb00fba.png",
     "static/media/jeremy.png": "/Sl-Tech/static/media/jeremy.38a8815953539fe01d84.png",
@@ -35,11 +35,11 @@
     "static/media/arrowRight.svg": "/Sl-Tech/static/media/arrowRight.5cc0e721f76598167a81652625000489.svg",
     "static/media/scroll.svg": "/Sl-Tech/static/media/scroll.de1d0a2f2d34be2d167a4733d34b9391.svg",
     "index.html": "/Sl-Tech/index.html",
-    "main.17926571.css.map": "/Sl-Tech/static/css/main.17926571.css.map",
-    "main.5236dea1.js.map": "/Sl-Tech/static/js/main.5236dea1.js.map"
+    "main.92e8a65d.css.map": "/Sl-Tech/static/css/main.92e8a65d.css.map",
+    "main.9b18d4be.js.map": "/Sl-Tech/static/js/main.9b18d4be.js.map"
   },
   "entrypoints": [
-    "static/css/main.17926571.css",
-    "static/js/main.5236dea1.js"
+    "static/css/main.92e8a65d.css",
+    "static/js/main.9b18d4be.js"
   ]
 }
