@@ -26,12 +26,12 @@ const Service = () => {
           <div className="contain plain">
             <h2>Our Services</h2>
             <p>These are the things that we’re good at!</p>
-            <button className="btn blueBtn">
+            <NavHashLink to={"/Service#top"} className="btn blueBtn">
               Learn More{" "}
               <span>
                 <img src={white} alt="whiteArrow" />
               </span>
-            </button>
+            </NavHashLink>
           </div>
         </div>
         <a
@@ -105,7 +105,7 @@ const Service = () => {
           data-aos-duration="1000"
           data-aos-once="true"
         >
-          <NavHashLink to="Service#top" className="btn blueBtn">
+          <NavHashLink to={"/Service#top"} className="btn blueBtn">
             Learn More{" "}
             <span>
               <img src={white} alt="whiteArrow" />

@@ -291,6 +291,12 @@ body {
         padding-right: 5px;
         height: none;
       }
+      &:not([value=""]) ~ label{
+        color: #333;
+      }
+      &:not([value=""]){
+        border: 1px solid #7d7c81;
+      }
 
       &:focus ~ label {
         color: #32a9ff;
@@ -501,6 +507,110 @@ body {
         .btn {
           padding: 8px 16px;
         }
+      }
+    }
+  }
+  .drop {
+    position: relative;
+    float: right;
+    width: 225px;
+    background: transparent;
+    border-radius: 3px;
+    margin-top: 15px;
+    .d {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 44px;
+      background-color: transparent;
+      .icon {
+        display: none;
+      }
+      .divider {
+        width: fit-content;
+        border: none;
+      }
+      .menu {
+        top: 112%;
+        width: 100%;
+        @media (max-width: 480px) {
+          right: -5%;
+          top: 115%;
+        }
+      }
+      .item {
+        padding: 0 16px;
+        a {
+          font-family: "Metropolis";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          color: #667c8a;
+        }
+        button {
+          border: none;
+          outline: none;
+          font-family: "Metropolis";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          color: #667c8a;
+          background-color: transparent;
+        }
+      }
+    }
+    .down {
+      display: none;
+      text-align: center;
+      &.active {
+        display: block;
+        padding-bottom: 10px;
+      }
+      p {
+        width: 90%;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        border-radius: 3px;
+        color: #637381;
+        margin: 0 auto;
+        padding: 10px 0;
+        // &:nth-child(2) {
+        // }
+        &:hover {
+          background-color: white;
+        }
+      }
+    }
+    .shown {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      height: 50px;
+      justify-content: center;
+      cursor: pointer;
+      i.icon {
+        margin-top: -4px;
+        margin-right: 8px;
+        color: #637381;
+      }
+      i.icon.user.circle:before {
+        font-size: 24px;
+      }
+      i.icon.angle.down {
+        display: block;
+        font-size: 16px;
+        margin-top: -2.4px;
+        margin-right: 0;
+      }
+      h1 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #637381;
+        margin: 0 10px;
       }
     }
   }

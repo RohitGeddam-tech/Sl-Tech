@@ -5,6 +5,8 @@ import ServiceMain from "./Components/Service/ServiceMain";
 import AboutMain from "./Components/About/AboutMain";
 import Career from "./Components/Career/Career";
 import ClientMain from "./Components/Client/ClientMain";
+import Login from "./Login";
+import Backend from "./Backend";
 
 const Routing = () => {
   return (
@@ -17,6 +19,8 @@ const Routing = () => {
           <Route path="/About" component={AboutMain} />
           <Route path="/Career" component={Career} />
           <Route path="/Client" component={ClientMain} />
+          <Route path="/login" exact component={Login} />
+          <Route path="/admin" exact component={Backend} />
         </Switch>
       </>
     </Router>
