@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Sl-Tech/static/css/main.cd1f64ec.css",
-    "main.js": "/Sl-Tech/static/js/main.0eb3a852.js",
+    "main.js": "/Sl-Tech/static/js/main.1d1136b6.js",
     "static/media/rohitDop.JPG": "/Sl-Tech/static/media/rohitDop.a3cf862731384b0dee6e.JPG",
     "static/media/aboutBanner.png": "/Sl-Tech/static/media/aboutBanner.fd45bcbb8dd50eb00fba.png",
     "static/media/jeremy.png": "/Sl-Tech/static/media/jeremy.38a8815953539fe01d84.png",
@@ -38,10 +38,10 @@
     "static/media/account.svg": "/Sl-Tech/static/media/account.4d718cfcdf28db05bd43d677d6145359.svg",
     "static/media/arrowDown.svg": "/Sl-Tech/static/media/arrowDown.bd38797e6ab4881433a2eee7581652ec.svg",
     "main.cd1f64ec.css.map": "/Sl-Tech/static/css/main.cd1f64ec.css.map",
-    "main.0eb3a852.js.map": "/Sl-Tech/static/js/main.0eb3a852.js.map"
+    "main.1d1136b6.js.map": "/Sl-Tech/static/js/main.1d1136b6.js.map"
   },
   "entrypoints": [
     "static/css/main.cd1f64ec.css",
-    "static/js/main.0eb3a852.js"
+    "static/js/main.1d1136b6.js"
   ]
 }
