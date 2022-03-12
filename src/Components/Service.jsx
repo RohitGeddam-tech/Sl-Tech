@@ -34,8 +34,8 @@ const Service = () => {
             </NavHashLink>
           </div>
         </div>
-        <a
-          href="/Service#webdesign"
+        <NavHashLink
+          to={"/Service#webdesign"}
           className="serviceBox"
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -46,9 +46,9 @@ const Service = () => {
             <img src={design} alt="Web Design" />
             <h3>Web Design</h3>
           </div>
-        </a>
-        <a
-          href="/Service#webdevelopment"
+        </NavHashLink>
+        <NavHashLink
+          to={"/Service#webdevelopment"}
           className="serviceBox"
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -59,9 +59,9 @@ const Service = () => {
             <img src={web} alt="Web Development" />
             <h3>Web Development</h3>
           </div>
-        </a>
-        <a
-          href="/Service#graphicdesign"
+        </NavHashLink>
+        <NavHashLink
+          to={"/Service#graphicdesign"}
           className="serviceBox"
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -72,9 +72,9 @@ const Service = () => {
             <img src={graph} alt="Graphic Design" />
             <h3>Graphic Design</h3>
           </div>
-        </a>
-        <a
-          href="/Service#socialmedia"
+        </NavHashLink>
+        <NavHashLink
+          to={"/Service#socialmedia"}
           className="serviceBox"
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -85,9 +85,9 @@ const Service = () => {
             <img src={social} alt="Social Media Marketing" />
             <h3>Social Media Marketing</h3>
           </div>
-        </a>
-        <a
-          href="/Service#videoanimation"
+        </NavHashLink>
+        <NavHashLink
+          to={"/Service#videoanimation"}
           className="serviceBox"
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -98,7 +98,7 @@ const Service = () => {
             <img src={vid} alt="Video Animation" />
             <h3>Video Animation</h3>
           </div>
-        </a>
+        </NavHashLink>
         <div
           className="bottom"
           data-aos="fade-up"

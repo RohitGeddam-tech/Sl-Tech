@@ -29,7 +29,7 @@ const BannerSlider = () => {
       setInvalid(true);
     } else {
       setValid(true);
-      setEmail("");
+      // setEmail("");
     }
   };
 
@@ -88,7 +88,7 @@ const BannerSlider = () => {
           </div>
         </div>
       </CustomSlider>
-      <Popup Open={valid} Close={setValid} />
+      <Popup Open={valid} Close={setValid} email={email} setEmail={setEmail} />
     </div>
   );
 };

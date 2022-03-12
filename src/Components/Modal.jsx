@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
+import axios from "axios";
 
-const Popup = ({ Open, Close }) => {
+const Popup = ({ Open, Close, email, setEmail }) => {
   const checkData = [
     {
       id: 1,
@@ -37,8 +38,9 @@ const Popup = ({ Open, Close }) => {
   const [phone, setPhone] = useState("");
   const [phoneInvalid, setPhoneInvalid] = useState(false);
   const [show, setShow] = useState(false);
-  //   const [invalid, setInvalid] = useState(false);
+  const [valid, setValid] = useState(false);
   const [state, setState] = useState([]);
+  const [error, setError] = useState({});
   const [stateInvalid, setStateInvalid] = useState(false);
 
   const handleChange = (e) => {
@@ -63,7 +65,7 @@ const Popup = ({ Open, Close }) => {
       default:
         break;
     }
-    // setInvalid(false);
+    setError({});
   };
 
   const handleSubmit = () => {
@@ -74,19 +76,50 @@ const Popup = ({ Open, Close }) => {
     }
     if (!(nameInvalid || phoneInvalid) && state.length > 0) {
       // console.log(name, phone, state, text);
-      setShow(true);
-      Close(false);
-    } 
-    // else {
-    //   console.log("error");
-    // }
+      setValid(true);
+      // Close(false);
+    }
   };
 
-  // React.useEffect(() => {
-  //   if (state.length > 0) {
-  //     console.log(state);
-  //   }
-  // }, [state]);
+  React.useEffect(() => {
+    const services = state.map((doc) => doc.value).join(", ");
+    const form = {
+      name: name,
+      email: email,
+      mobile: phone,
+      services: services,
+      message: text,
+    };
+    if (valid) {
+      axios
+        .post(`${process.env.REACT_APP_PUBLIC_URL}contact-us`, form)
+        .then((res) => {
+          // console.log(res);
+          setName("");
+          setEmail("");
+          setPhone("");
+          setState([]);
+          setText("");
+          Close(false);
+          setShow(true);
+          setValid(false);
+        })
+        .catch((err) => {
+          // console.warn(err);
+          const { status_code, errors = {} } =
+            (err.response && err.response.data) || {};
+
+          const errArr = Object.keys(errors);
+          if (status_code === 422 && errArr.length) {
+            const error = {};
+            errArr.forEach((key) => (error[key] = errors[key][0]));
+            setError(error);
+          }
+        });
+    }
+  }, [valid]);
+
+  const TextName = ` textfield ${text ? "has-value" : ""}`;
 
   return (
     <>
@@ -94,13 +127,28 @@ const Popup = ({ Open, Close }) => {
         open={Open}
         center
         focusTrapped={false}
-        onClose={() => Close(false)}
+        onClose={() => {
+          setName("");
+          setEmail("");
+          setPhone("");
+          setError({});
+          setState([]);
+          setText("");
+          setNameInvalid(false);
+          setPhoneInvalid(false);
+          setStateInvalid(false);
+          Close(false);
+        }}
         classNames="modal"
       >
         <div className="popup">
           <div className="container">
             <h2>Would you like to tell us exactly what you’re looking for?</h2>
-            <div className={`textInput ${nameInvalid ? "errorInput" : ""} `}>
+            <div
+              className={`textInput ${
+                nameInvalid || error.name ? "errorInput" : ""
+              }`}
+            >
               <input
                 className="input"
                 value={name}
@@ -108,24 +156,29 @@ const Popup = ({ Open, Close }) => {
                 name="name"
                 pattern="^(?! )[A-Za-z ]*(?<! )$"
                 required
+                autocomplete="off"
                 onChange={handleChange}
               />
               <label htmlFor="name">
                 Your Full Name <span style={{ color: "red" }}>*</span>
               </label>
               {nameInvalid ? (
-                <p className="error-text">
-                  We will need your name to get in touch
-                </p>
+                <p className="error-text">Please provide a valid name.</p>
               ) : null}
+              {error.name ? <p className="error-text">{error.name}</p> : null}
             </div>
-            <div className={`textInput ${phoneInvalid ? "errorInput" : ""} `}>
+            <div
+              className={`textInput ${
+                phoneInvalid || error.mobile ? "errorInput" : ""
+              } `}
+            >
               <input
                 className="input"
                 value={phone}
                 type="number"
                 name="phone"
                 required
+                autocomplete="off"
                 onChange={handleChange}
               />
               <label htmlFor="phone">
@@ -133,8 +186,11 @@ const Popup = ({ Open, Close }) => {
               </label>
               {phoneInvalid ? (
                 <p className="error-text">
-                  We will need your phone no. to get in touch
+                  Please provide a valid 10 digit number.
                 </p>
+              ) : null}
+              {error.mobile ? (
+                <p className="error-text">{error.mobile}</p>
               ) : null}
             </div>
             <h1>Services</h1>
@@ -172,10 +228,13 @@ const Popup = ({ Open, Close }) => {
               {stateInvalid ? (
                 <p className="error-text">Please select a service.</p>
               ) : null}
+              {error.services ? (
+                <p className="error-text">{error.services}</p>
+              ) : null}
             </div>
             <div className="textInput">
               <textarea
-                className="textfield"
+                className={TextName}
                 value={text}
                 type="checkbox"
                 name="text"
@@ -183,9 +242,26 @@ const Popup = ({ Open, Close }) => {
                 onChange={handleChange}
               />
               <label htmlFor="text">Any special requests? (Optional)</label>
+              {error.email ? (
+                <p className="error-text">Please provide valid details.</p>
+              ) : null}
             </div>
             <div className="bottom">
-              <button className="btn emptyBtn" onClick={() => Close(false)}>
+              <button
+                className="btn emptyBtn"
+                onClick={() => {
+                  setName("");
+                  setEmail("");
+                  setPhone("");
+                  setError({});
+                  setState([]);
+                  setText("");
+                  setNameInvalid(false);
+                  setPhoneInvalid(false);
+                  setStateInvalid(false);
+                  Close(false);
+                }}
+              >
                 Skip this for now
               </button>
               <button type="button" onClick={handleSubmit} className="btn">
@@ -213,6 +289,7 @@ const Popup = ({ Open, Close }) => {
               className="btn emptyBtn"
               onClick={() => {
                 setShow(false);
+                window.location.href = "/#top";
               }}
             >
               Back to homepage
@@ -221,6 +298,7 @@ const Popup = ({ Open, Close }) => {
               className="btn blueBtn"
               onClick={() => {
                 setShow(false);
+                window.location.href = "/Client#top";
               }}
             >
               View Our Portfolio

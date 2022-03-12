@@ -10,7 +10,20 @@ import { NavHashLink } from "react-router-hash-link";
 const NewHeader = () => {
   const [width] = useWindowSize();
   const [isActive, setActive] = useState(false);
+  const [state, setState] = useState(false);
   const side = isActive ? "side active" : "side";
+
+  React.useEffect(() => {
+    var parts = window.location.href.split("/");
+    var lastSegment = parts.pop() || parts.pop();
+    // console.log(lastSegment);
+    if (lastSegment === "#top" || lastSegment === "") {
+      setState(true);
+    } else {
+      setState(false);
+    }
+  }, []);
+
   return (
     <div className="new">
       {width < 1020 ? (
@@ -61,7 +74,8 @@ const NewHeader = () => {
               <li>
                 <NavHashLink
                   to="/#top"
-                  className="navfade"
+                  // className="navfade"
+                  className={`navfade ${state ? "active" : ""}`}
                   onClick={() => setActive(false)}
                 >
                   Home
@@ -137,7 +151,8 @@ const NewHeader = () => {
               <NavHashLink
                 to="/#top"
                 activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
-                className="navfade"
+                // className="navfade"
+                className={`navfade ${state ? "active" : ""}`}
               >
                 Home
               </NavHashLink>

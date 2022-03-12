@@ -177,7 +177,7 @@
       }
       @media (max-width: 700px) {
         flex-flow: column;
-        padding-bottom: 55px;
+        padding-top: 55px;
         .bodyLeft {
           .imgClass {
             padding: 0 !important;
@@ -206,8 +206,8 @@
       padding-top: 0;
     }
     @media (max-width: 700px) {
-      padding: 90px 0;
-      padding-bottom: 0;
+      padding: 40px 0 50px;
+      // padding-bottom: 0;
     }
   }
 }

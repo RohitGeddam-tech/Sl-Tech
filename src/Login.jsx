@@ -162,7 +162,6 @@ const Login = () => {
               localStorage.clear();
             }
             setSuccess(res.data.success);
-            // console.log(success);
           }
         })
         .catch((err) => {

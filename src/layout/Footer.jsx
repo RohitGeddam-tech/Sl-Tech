@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import address from "../images/location.svg";
 import mail from "../images/email.svg";
 import call from "../images/call1.svg";
@@ -6,6 +6,8 @@ import scroll from "../images/scroll.svg";
 import "./Footer.scss";
 import Popup from "../Components/Modal";
 import Aos from "aos";
+// import { Link } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -13,6 +15,30 @@ const Footer = () => {
   const [invalid, setInvalid] = useState(false);
   const [valid, setValid] = useState(false);
   // const [hover, setHover] = useState(false);
+
+  const colorRef = React.useRef(null);
+
+  const isInView = () => {
+    const rect = window.pageYOffset;
+    return rect >= 150;
+  };
+
+  const [inView, setInView] = useState(false);
+
+  const scrollHandler = useCallback(() => {
+    setInView(isInView());
+  }, []);
+
+  useEffect(() => {
+    setInView(isInView());
+    window.addEventListener("scroll", scrollHandler);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, [scrollHandler]);
+
+  // const cssColor = inView ? "Appcolor" : "App";
+
   const handleChange = (e) => {
     setEmail(e.target.value);
     setEmailInvalid(!e.target.validity.valid);
@@ -23,7 +49,7 @@ const Footer = () => {
       setInvalid(true);
     } else {
       setValid(true);
-      setEmail("");
+      // setEmail("");
     }
   };
   React.useEffect(() => {
@@ -34,6 +60,8 @@ const Footer = () => {
     <div className="footer">
       <img
         src={scroll}
+        ref={colorRef}
+        className={`${inView ? "disp" : "nodisp"}`}
         alt="scrollToTop"
         style={{
           position: "fixed",
@@ -129,15 +157,15 @@ const Footer = () => {
         <div className="container">
           <p>© Sugarlogger Technologies Pvt. Ltd.</p>
           <div className="footNav">
-            <a href="/About#top">About Us</a>
-            <a href="/Service#top">Our Services</a>
+            <NavHashLink to="/About#top">About Us</NavHashLink>
+            <NavHashLink to="/Service#top">Our Services</NavHashLink>
             {/* <a href="/">Our Careers</a> */}
-            <a href="/Client#top">Our Clients</a>
-            <a href="/">Privacy Policy</a>
+            <NavHashLink to="/Client#top">Our Clients</NavHashLink>
+            <NavHashLink to="/login#top">Privacy Policy</NavHashLink>
           </div>
         </div>
       </div>
-      <Popup Open={valid} Close={setValid} />
+      <Popup Open={valid} Close={setValid} email={email} setEmail={setEmail} />
     </div>
   );
 };

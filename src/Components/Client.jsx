@@ -6,6 +6,7 @@ import shycosafe from "../images/shycosafe.webp";
 import rnr from "../images/rnr.webp";
 import "./Client.scss";
 import Aos from "aos";
+import { NavHashLink } from "react-router-hash-link";
 
 const Client = () => {
   React.useEffect(() => {
@@ -94,12 +95,12 @@ const Client = () => {
           data-aos-duration="1000"
           data-aos-once="true"
         >
-          <button className="btn blueBtn">
+          <NavHashLink to={"/Client#top"} className="btn blueBtn">
             View entire portfolio{" "}
             <span>
               <img src={white} alt="whiteArrow" />
             </span>
-          </button>
+          </NavHashLink>
         </div>
       </div>
     </div>
