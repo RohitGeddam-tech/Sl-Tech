@@ -434,8 +434,17 @@ body {
       }
       @media (max-width: 730px) {
         padding: 48px 12px;
-        .btn {
-          padding: 8px 16px;
+        .bottom {
+          flex-flow: column;
+          padding-top: 20px;
+          width: 100%;
+          .btn {
+            padding: 8px 16px;
+            &.blueBtn {
+              margin-left: 0;
+              margin-top: 16px;
+            }
+          }
         }
       }
     }

@@ -70,6 +70,7 @@ const Footer = () => {
           width: "auto",
           height: "auto",
           cursor: "pointer",
+          zIndex: "99",
         }}
         // className="btn"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

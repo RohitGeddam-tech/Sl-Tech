@@ -156,7 +156,7 @@ const Popup = ({ Open, Close, email, setEmail }) => {
                 name="name"
                 pattern="^(?! )[A-Za-z ]*(?<! )$"
                 required
-                autocomplete="off"
+                autoComplete="off"
                 onChange={handleChange}
               />
               <label htmlFor="name">
@@ -178,7 +178,7 @@ const Popup = ({ Open, Close, email, setEmail }) => {
                 type="number"
                 name="phone"
                 required
-                autocomplete="off"
+                autoComplete="off"
                 onChange={handleChange}
               />
               <label htmlFor="phone">

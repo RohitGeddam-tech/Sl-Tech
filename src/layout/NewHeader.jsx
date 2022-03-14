@@ -9,9 +9,9 @@ import { NavHashLink } from "react-router-hash-link";
 
 const NewHeader = () => {
   const [width] = useWindowSize();
-  const [isActive, setActive] = useState(false);
+  const [start, setStart] = useState(false);
   const [state, setState] = useState(false);
-  const side = isActive ? "side active" : "side";
+  const side = start ? "side active" : "side";
 
   React.useEffect(() => {
     var parts = window.location.href.split("/");
@@ -31,7 +31,7 @@ const NewHeader = () => {
           <div className="header">
             <nav className="container-fullnav">
               <div className="nav-image">
-                <NavHashLink to="/#top" onClick={() => setActive(false)}>
+                <NavHashLink to="/#top" onClick={() => setStart(false)}>
                   <img src={logo} alt="logo" />
                   {/* <h2 className="logo">SL Technologies</h2> */}
                 </NavHashLink>
@@ -42,18 +42,18 @@ const NewHeader = () => {
                 Call Us
               </a>
               <div className="nav-links">
-                {isActive ? (
+                {start ? (
                   <>
                     <XHam
                       ClickHandle={() => {
-                        setActive(!isActive);
+                        setStart(!start);
                       }}
                     />
                   </>
                 ) : (
                   <Ham
                     ClickHandle={() => {
-                      setActive(!isActive);
+                      setStart(!start);
                     }}
                   />
                 )}
@@ -62,21 +62,12 @@ const NewHeader = () => {
           </div>
           <div className={side}>
             <div className="container">
-              {/* <li>
-                <NavHashLink
-                  to="/#top"
-                  className="navfade"
-                  onClick={() => setActive(false)}
-                >
-                  Home
-                </NavHashLink>
-              </li> */}
               <li>
                 <NavHashLink
                   to="/#top"
                   // className="navfade"
                   className={`navfade ${state ? "active" : ""}`}
-                  onClick={() => setActive(false)}
+                  onClick={() => setStart(false)}
                 >
                   Home
                 </NavHashLink>
@@ -87,7 +78,7 @@ const NewHeader = () => {
                   className={`navfade ${
                     window.location.href.includes("Service") ? "active" : ""
                   }`}
-                  onClick={() => setActive(false)}
+                  onClick={() => setStart(false)}
                 >
                   Services
                 </NavHashLink>
@@ -98,7 +89,7 @@ const NewHeader = () => {
                   className={`navfade ${
                     window.location.href.includes("Client") ? "active" : ""
                   }`}
-                  onClick={() => setActive(false)}
+                  onClick={() => setStart(false)}
                 >
                   Clients
                 </NavHashLink>
@@ -109,7 +100,7 @@ const NewHeader = () => {
                   className={`navfade ${
                     window.location.href.includes("Career") ? "active" : ""
                   }`}
-                  onClick={() => setActive(false)}
+                  onClick={() => setStart(false)}
                 >
                   Careers
                 </NavHashLink>
@@ -120,7 +111,7 @@ const NewHeader = () => {
                   className={`navfade ${
                     window.location.href.includes("About") ? "active" : ""
                   }`}
-                  onClick={() => setActive(false)}
+                  onClick={() => setStart(false)}
                 >
                   About Us
                 </NavHashLink>
@@ -130,7 +121,7 @@ const NewHeader = () => {
                   to="/#contact"
                   className="btn"
                   onClick={() => {
-                    setActive(false);
+                    setStart(false);
                     sessionStorage.setItem("utm_content", `Contact Form`);
                   }}
                 >
