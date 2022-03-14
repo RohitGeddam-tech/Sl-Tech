@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/Sl-Tech/static/css/main.bfc63c14.css",
-    "main.js": "/Sl-Tech/static/js/main.2381448d.js",
-    "static/media/rohitDop.JPG": "/Sl-Tech/static/media/rohitDop.a3cf862731384b0dee6e.JPG",
+    "main.css": "/Sl-Tech/static/css/main.3b4bae96.css",
+    "main.js": "/Sl-Tech/static/js/main.6b736141.js",
     "static/media/aboutBanner.png": "/Sl-Tech/static/media/aboutBanner.fd45bcbb8dd50eb00fba.png",
     "static/media/jeremy.png": "/Sl-Tech/static/media/jeremy.38a8815953539fe01d84.png",
     "static/media/service.png": "/Sl-Tech/static/media/service.3355b7ac2511add4e73e.png",
@@ -10,6 +9,7 @@
     "static/media/rajsir.png": "/Sl-Tech/static/media/rajsir.70331983cb6b0d9ceebe.png",
     "static/media/kiran.png": "/Sl-Tech/static/media/kiran.6a50a53178b24ddaf225.png",
     "static/media/darshan2.jpeg": "/Sl-Tech/static/media/darshan2.7f2aa51b98baacb33854.jpeg",
+    "static/media/rohitDop.jpg": "/Sl-Tech/static/media/rohitDop.fc051b0125400c545b09.jpg",
     "static/media/jeet.png": "/Sl-Tech/static/media/jeet.233bddd487c11888835c.png",
     "static/media/anujita.png": "/Sl-Tech/static/media/anujita.7dd9efffbbb2b988417c.png",
     "static/media/banner1.webp": "/Sl-Tech/static/media/banner1.576d4f8918632deb8b66.webp",
@@ -37,11 +37,11 @@
     "index.html": "/Sl-Tech/index.html",
     "static/media/account.svg": "/Sl-Tech/static/media/account.4d718cfcdf28db05bd43d677d6145359.svg",
     "static/media/arrowDown.svg": "/Sl-Tech/static/media/arrowDown.bd38797e6ab4881433a2eee7581652ec.svg",
-    "main.bfc63c14.css.map": "/Sl-Tech/static/css/main.bfc63c14.css.map",
-    "main.2381448d.js.map": "/Sl-Tech/static/js/main.2381448d.js.map"
+    "main.3b4bae96.css.map": "/Sl-Tech/static/css/main.3b4bae96.css.map",
+    "main.6b736141.js.map": "/Sl-Tech/static/js/main.6b736141.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfc63c14.css",
-    "static/js/main.2381448d.js"
+    "static/css/main.3b4bae96.css",
+    "static/js/main.6b736141.js"
   ]
 }
