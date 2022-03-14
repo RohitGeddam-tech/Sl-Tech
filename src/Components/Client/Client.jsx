@@ -1,9 +1,9 @@
 import React from "react";
-import white from "../images/arrowRightWhite.svg";
-import docbel from "../images/docbel.webp";
-import mirana from "../images/mirana.webp";
-import shycosafe from "../images/shycosafe.webp";
-import rnr from "../images/rnr.webp";
+import white from "../../images/arrowRightWhite.svg";
+import docbel from "../../images/docbel.webp";
+import mirana from "../../images/mirana.webp";
+import shycosafe from "../../images/shycosafe.webp";
+import rnr from "../../images/rnr.webp";
 import "./Client.scss";
 import Aos from "aos";
 import { NavHashLink } from "react-router-hash-link";
@@ -89,7 +89,7 @@ const Client = () => {
             </p>
           </a>
         </div>
-        <div
+        {/* <div
           className="bottom"
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -101,7 +101,7 @@ const Client = () => {
               <img src={white} alt="whiteArrow" />
             </span>
           </NavHashLink>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -184,8 +184,9 @@ const Login = () => {
           } else {
             setAlertState({ open: true, message, type: "error" });
             localStorage.clear();
+            // window.location.reload();
           }
-          localStorage.clear();
+          // localStorage.clear();
           setRight(false);
         });
       // }
@@ -252,7 +253,9 @@ const Login = () => {
           <form action="post" className="loginForm" onSubmit={handleSubmit}>
             <div className="otp">
               <div className="textInput">
-                <div className={`textInput ${emailInvalid ? "errorInput" : ""}`}>
+                <div
+                  className={`textInput ${emailInvalid ? "errorInput" : ""}`}
+                >
                   <input
                     className="input"
                     value={email}
@@ -298,7 +301,9 @@ const Login = () => {
             {success ? (
               <div className="otp">
                 <div className="textInput">
-                  <div className={`textInput ${codeInvalid ? "errorInput" : ""}`}>
+                  <div
+                    className={`textInput ${codeInvalid ? "errorInput" : ""}`}
+                  >
                     <input
                       value={code}
                       type="number"

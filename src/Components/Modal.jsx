@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 import axios from "axios";
+// import { useNavigate } from "react-router-dom";
 
 const Popup = ({ Open, Close, email, setEmail }) => {
   const checkData = [
@@ -39,6 +40,7 @@ const Popup = ({ Open, Close, email, setEmail }) => {
   const [phoneInvalid, setPhoneInvalid] = useState(false);
   const [show, setShow] = useState(false);
   const [valid, setValid] = useState(false);
+  const [btnloading, setBtnloading] = useState(false);
   const [state, setState] = useState([]);
   const [error, setError] = useState({});
   const [stateInvalid, setStateInvalid] = useState(false);
@@ -77,6 +79,7 @@ const Popup = ({ Open, Close, email, setEmail }) => {
     if (!(nameInvalid || phoneInvalid) && state.length > 0) {
       // console.log(name, phone, state, text);
       setValid(true);
+      setBtnloading(true);
       // Close(false);
     }
   };
@@ -103,11 +106,14 @@ const Popup = ({ Open, Close, email, setEmail }) => {
           Close(false);
           setShow(true);
           setValid(false);
+          setBtnloading(false);
         })
         .catch((err) => {
           // console.warn(err);
           const { status_code, errors = {} } =
             (err.response && err.response.data) || {};
+
+          setBtnloading(false);
 
           const errArr = Object.keys(errors);
           if (status_code === 422 && errArr.length) {
@@ -120,6 +126,8 @@ const Popup = ({ Open, Close, email, setEmail }) => {
   }, [valid]);
 
   const TextName = ` textfield ${text ? "has-value" : ""}`;
+
+  // const navigate = useNavigate();
 
   return (
     <>
@@ -264,7 +272,12 @@ const Popup = ({ Open, Close, email, setEmail }) => {
               >
                 Skip this for now
               </button>
-              <button type="button" onClick={handleSubmit} className="btn">
+              <button
+                type="button"
+                onClick={handleSubmit}
+                className="btn"
+                disabled={btnloading}
+              >
                 Get a call back
               </button>
             </div>
@@ -289,7 +302,8 @@ const Popup = ({ Open, Close, email, setEmail }) => {
               className="btn emptyBtn"
               onClick={() => {
                 setShow(false);
-                window.location.href = "/#top";
+                // window.location.href = "/#top";
+                window.scrollTo({ top: 0, behavior: "smooth" });
               }}
             >
               Back to homepage
@@ -299,6 +313,8 @@ const Popup = ({ Open, Close, email, setEmail }) => {
               onClick={() => {
                 setShow(false);
                 window.location.href = "/Client#top";
+                return false;
+                // navigate("/Client", { replace: true });
               }}
             >
               View Our Portfolio

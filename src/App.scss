@@ -32,10 +32,6 @@
         // height: fit-content;
         position: relative;
         margin-top: 10px;
-        &:disabled {
-          opacity: 0.5;
-          cursor: not-allowed;
-        }
       }
       .otp {
         display: flex;
@@ -140,6 +136,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            cursor: pointer;
             &:focus {
               outline: none;
             }

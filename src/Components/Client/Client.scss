@@ -1,0 +1,107 @@
+.client {
+  background: linear-gradient(
+    258.18deg,
+    #e3f3ff 0.86%,
+    rgba(227, 243, 255, 0) 98.72%
+  );
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding: 80px 0 120px;
+    .clientDetails {
+      padding-top: 65px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .clientBox {
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+        width: 46%;
+        align-self: flex-start;
+        justify-content: flex-start;
+        // transition: all 1s ease;
+        h3 {
+          margin: 0;
+          padding: 16px 0 4px 0;
+          // transition: all 1s ease;
+        }
+        p {
+          font-size: 18px;
+          line-height: 27px;
+        }
+        &:hover {
+          background: #ffffff;
+          border-radius: 10px;
+          cursor: pointer;
+          h3{
+            color: #68C0FF;
+            text-decoration: underline;
+            text-decoration-color: #68C0FF;
+          }
+        }
+      }
+    }
+    .bottom {
+      padding-top: 80px;
+    }
+    @media (max-width: 700px) {
+      padding: 50px 0;
+      p{
+        margin-bottom: 40px;
+      }
+      .clientDetails {
+        flex-flow: column;
+        padding-top: 0px;
+        .clientBox {
+          width: 95%;
+          margin-bottom: 40px;
+          p {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 0;
+          }
+          img{
+            width: 100%;
+          }
+        }
+      }
+      .bottom {
+        padding-top: 0;
+      }
+    }
+    // @media (max-width: 420px) {
+    //   .clientDetails{
+    //     .clientBox{
+    //       padding: 0;
+    //       img{
+    //         max-width: 362px;
+    //         max-height: 241px;
+    //       }
+    //       &:hover {
+    //         background: transparent;
+    //         border-radius: 10px;
+    //         cursor: pointer;
+    //         h3{
+    //           color: #074269;
+    //           text-decoration: none;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+    @media (max-width: 420px) {
+      .clientDetails{
+        .clientBox{
+          img{
+            max-width: 362px;
+            max-height: 241px;
+          }
+        }
+      }
+    }
+  }
+}

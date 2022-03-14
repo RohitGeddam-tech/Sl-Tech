@@ -11,7 +11,7 @@ import anujita from "../../images/anujita.png";
 // import rohit from "../../images/rohit.jpg";
 // import rohit from "../../images/rohitSnap.jpg";
 // import rohit from "../../images/rohitNew.jpg";
-import rohit from "../../images/rohitDop.JPG";
+import rohit from "../../images/rohitDop.jpg";
 
 const teamData = [
   {

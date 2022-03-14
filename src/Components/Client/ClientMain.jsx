@@ -1,7 +1,7 @@
 import "./App.scss";
 import Footer from "../../layout/Footer";
 import NewHeader from "../../layout/NewHeader";
-import Client from "../Client";
+import Client from "./Client";
 
 function ClientMain() {
   return (

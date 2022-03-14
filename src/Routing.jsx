@@ -8,10 +8,19 @@ import ClientMain from "./Components/Client/ClientMain";
 import Login from "./Login";
 import Backend from "./Backend";
 
+// const Wrapper = ({ children }) => {
+//   const location = useLocation();
+//   React.useLayoutEffect(() => {
+//     document.body.scrollTo({ top: 0, behavior: "smooth" });
+//   }, [location.pathname]);
+//   return children;
+// };
+
 const Routing = () => {
   return (
     <Router>
       <>
+        {/* <Wrapper> */}
         <Routes>
           <Route path="/" exact element={<App animate={true} />} />
           <Route path="/Sl-Tech" exact element={<App animate={true} />} />
@@ -22,6 +31,7 @@ const Routing = () => {
           <Route path="/login" element={<Login animate={true} />} />
           <Route path="/admin" element={<Backend animate={true} />} />
         </Routes>
+        {/* </Wrapper> */}
       </>
     </Router>
   );
