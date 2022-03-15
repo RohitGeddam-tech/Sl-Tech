@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Sl-Tech/static/css/main.161d75db.css",
-    "main.js": "/Sl-Tech/static/js/main.81223d0d.js",
+    "main.js": "/Sl-Tech/static/js/main.d9aa454e.js",
     "static/media/aboutBanner.png": "/Sl-Tech/static/media/aboutBanner.fd45bcbb8dd50eb00fba.png",
     "static/media/jeremy.png": "/Sl-Tech/static/media/jeremy.38a8815953539fe01d84.png",
     "static/media/service.png": "/Sl-Tech/static/media/service.3355b7ac2511add4e73e.png",
@@ -38,10 +38,10 @@
     "static/media/account.svg": "/Sl-Tech/static/media/account.4d718cfcdf28db05bd43d677d6145359.svg",
     "static/media/arrowDown.svg": "/Sl-Tech/static/media/arrowDown.bd38797e6ab4881433a2eee7581652ec.svg",
     "main.161d75db.css.map": "/Sl-Tech/static/css/main.161d75db.css.map",
-    "main.81223d0d.js.map": "/Sl-Tech/static/js/main.81223d0d.js.map"
+    "main.d9aa454e.js.map": "/Sl-Tech/static/js/main.d9aa454e.js.map"
   },
   "entrypoints": [
     "static/css/main.161d75db.css",
-    "static/js/main.81223d0d.js"
+    "static/js/main.d9aa454e.js"
   ]
 }
