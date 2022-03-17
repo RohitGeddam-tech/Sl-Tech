@@ -4,6 +4,7 @@ import Setting from "./Settings";
 import { Snackbar } from "@material-ui/core";
 import { Alert } from "@material-ui/lab";
 import ReactPaginate from "react-paginate";
+import { useNavigate } from "react-router-dom";
 // import { Alert } from "@material-ui/lab";
 
 const Backend = () => {
@@ -16,6 +17,11 @@ const Backend = () => {
     message: "",
     type: "success",
   });
+  const navigate = useNavigate();
+
+  React.useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   const handleAlertClose = () => {
     setAlertState({ open: false, message: "", type: "success" });
@@ -61,7 +67,8 @@ const Backend = () => {
           }
         });
     } else {
-      window.location.href = "/#top";
+      // window.location.href = "/#top";
+      navigate("/", { replace: true });
     }
   }, []);
 

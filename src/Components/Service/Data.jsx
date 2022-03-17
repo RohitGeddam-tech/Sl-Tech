@@ -11,21 +11,21 @@ const data = [
     details: [
       {
         title: "UI Design",
-        text: "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content",
+        text: "They say that the best UI is when it is not seen at all so pardon us if you don't see any UI. We constantly attempt to follow the goldern rule :)",
       },
       {
         title: "UX Design",
-        text: "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content",
+        text: "We try to create customer delight during interaction on your interface even at the most unexpected places and enhance the experience. It's what we do :)",
       },
     ],
     details1: [
       {
         title: "Wireframing",
-        text: "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content",
+        text: "We take great care while designing and developing to create a seamless experience for your customer across all devices",
       },
       {
         title: "Interactive Prototyping",
-        text: "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content",
+        text: "We use the latest softwares to design your website, so that you can see how it behaves even before is coded ",
       },
     ],
   },
@@ -35,7 +35,7 @@ const data = [
     details: [
       {
         title: "Interface Development",
-        text: "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content",
+        text: "To make the interaction easy for the website visitor we try to solve complex problems for implementing visual and interactive elements that users engage with",
       },
       {
         title: "Backend Development",
@@ -49,7 +49,7 @@ const data = [
       },
       {
         title: "E-commerce setup",
-        text: "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content",
+        text: "We'll take care of every aspect for setting up your shop online, so that you can focus on your products and business",
       },
     ],
   },

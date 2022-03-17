@@ -6,12 +6,15 @@ import shycosafe from "../../images/shycosafe.webp";
 import rnr from "../../images/rnr.webp";
 import "./Client.scss";
 import Aos from "aos";
-import { NavHashLink } from "react-router-hash-link";
+// import { NavHashLink } from "react-router-hash-link";
 
 const Client = () => {
   React.useEffect(() => {
     Aos.init({ duration: 500 });
   });
+  React.useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   return (
     <div className="client">
       <div className="container">

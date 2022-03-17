@@ -5,6 +5,7 @@ import axios from "axios";
 import { Snackbar } from "@material-ui/core";
 import { Alert } from "@material-ui/lab";
 import NewHeader from "./layout/NewHeader";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -23,6 +24,8 @@ const Login = () => {
     message: "",
     type: "success",
   });
+
+  const navigate = useNavigate();
 
   const otpApi = async () => {
     const form = {
@@ -156,7 +159,8 @@ const Login = () => {
             localStorage.setItem("role", info.role);
             setRight(false);
             if (info.role === "admin" || info.role === "assistant_admin") {
-              window.location.href = "/admin";
+              // window.location.href = "/admin";
+              navigate("/admin", { replace: true });
             }
             if (res.data.message === "unauthorized") {
               localStorage.clear();

@@ -5,10 +5,12 @@ import React from "react";
 import account from "./images/account.svg";
 import down from "./images/arrowDown.svg";
 import { Button, Menu, MenuItem } from "@material-ui/core";
+import { useNavigate } from "react-router-dom";
 
 export default function BasicMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [name, setName] = React.useState("Admin");
+  const navigate = useNavigate();
 
   React.useEffect(() => {
     if (localStorage.getItem("name") !== null) {
@@ -56,7 +58,8 @@ export default function BasicMenu() {
           onClick={() => {
             localStorage.clear();
             setAnchorEl(null);
-            window.location.href = "/#top";
+            // window.location.href = "/#top";
+            navigate("/", { replace: true });
           }}
         >
           Logout

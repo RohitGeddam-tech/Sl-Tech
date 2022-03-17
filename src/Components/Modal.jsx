@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 import axios from "axios";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Popup = ({ Open, Close, email, setEmail }) => {
   const checkData = [
@@ -127,7 +127,7 @@ const Popup = ({ Open, Close, email, setEmail }) => {
 
   const TextName = ` textfield ${text ? "has-value" : ""}`;
 
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <>
@@ -185,6 +185,8 @@ const Popup = ({ Open, Close, email, setEmail }) => {
                 value={phone}
                 type="number"
                 name="phone"
+                // type="tel"
+                inputmode="numeric"
                 required
                 autoComplete="off"
                 onChange={handleChange}
@@ -312,9 +314,9 @@ const Popup = ({ Open, Close, email, setEmail }) => {
               className="btn blueBtn"
               onClick={() => {
                 setShow(false);
-                window.location.href = "/Client#top";
-                return false;
-                // navigate("/Client", { replace: true });
+                // window.location.href = "/Client#top";
+                // return false;
+                navigate("/Client", { replace: true });
               }}
             >
               View Our Portfolio
