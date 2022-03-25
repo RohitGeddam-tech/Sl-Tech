@@ -314,8 +314,6 @@ const Popup = ({ Open, Close, email, setEmail }) => {
               className="btn blueBtn"
               onClick={() => {
                 setShow(false);
-                // window.location.href = "/Client#top";
-                // return false;
                 navigate("/Client", { replace: true });
               }}
             >

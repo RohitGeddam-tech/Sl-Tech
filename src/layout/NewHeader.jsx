@@ -31,7 +31,7 @@ const NewHeader = () => {
           <div className="header">
             <nav className="container-fullnav">
               <div className="nav-image">
-                <NavHashLink to="/#top" onClick={() => setStart(false)}>
+                <NavHashLink to="/" onClick={() => setStart(false)}>
                   <img src={logo} alt="logo" />
                   {/* <h2 className="logo">SL Technologies</h2> */}
                 </NavHashLink>
@@ -64,7 +64,7 @@ const NewHeader = () => {
             <div className="container">
               <li>
                 <NavHashLink
-                  to="/#top"
+                  to="/"
                   // className="navfade"
                   className={`navfade ${state ? "active" : ""}`}
                   onClick={() => setStart(false)}
@@ -74,7 +74,7 @@ const NewHeader = () => {
               </li>
               <li>
                 <NavHashLink
-                  to="/Service#top"
+                  to="/Service"
                   className={`navfade ${
                     window.location.href.includes("Service") ? "active" : ""
                   }`}
@@ -85,7 +85,7 @@ const NewHeader = () => {
               </li>
               <li>
                 <NavHashLink
-                  to="/Client#top"
+                  to="/Client"
                   className={`navfade ${
                     window.location.href.includes("Client") ? "active" : ""
                   }`}
@@ -96,7 +96,7 @@ const NewHeader = () => {
               </li>
               {/* <li>
                 <NavHashLink
-                  to="/Career#top"
+                  to="/Career"
                   className={`navfade ${
                     window.location.href.includes("Career") ? "active" : ""
                   }`}
@@ -107,7 +107,7 @@ const NewHeader = () => {
               </li> */}
               <li>
                 <NavHashLink
-                  to="/About#top"
+                  to="/About"
                   className={`navfade ${
                     window.location.href.includes("About") ? "active" : ""
                   }`}
@@ -134,13 +134,13 @@ const NewHeader = () => {
       ) : (
         <>
           <div className="container">
-            <NavHashLink to="/#top" className="logo">
+            <NavHashLink to="/" className="logo">
               <img src={logo} alt="logo" />
               {/* <h2 className="logo">SL Technologies</h2> */}
             </NavHashLink>
             <div className="navDetails">
               <NavHashLink
-                to="/#top"
+                to="/"
                 activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
                 // className="navfade"
                 className={`navfade ${state ? "active" : ""}`}
@@ -148,7 +148,7 @@ const NewHeader = () => {
                 Home
               </NavHashLink>
               <NavHashLink
-                to="/Service#top"
+                to="/Service"
                 // activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
                 className={`navfade ${
                   window.location.href.includes("Service") ? "active" : ""
@@ -157,7 +157,7 @@ const NewHeader = () => {
                 Services
               </NavHashLink>
               <NavHashLink
-                to="/Client#top"
+                to="/Client"
                 // activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
                 // className="navfade"
                 className={`navfade ${
@@ -167,7 +167,7 @@ const NewHeader = () => {
                 Clients
               </NavHashLink>
               {/* <NavHashLink
-                to="/Career#top"
+                to="/Career"
                 // activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
                 // className="navfade"
                 className={`navfade ${
@@ -177,7 +177,7 @@ const NewHeader = () => {
                 Careers
               </NavHashLink> */}
               <NavHashLink
-                to="/About#top"
+                to="/About"
                 // activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
                 // className="navfade"
                 className={`navfade ${

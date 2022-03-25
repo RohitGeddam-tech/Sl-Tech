@@ -95,7 +95,7 @@ const Client = () => {
           data-aos-duration="1000"
           data-aos-once="true"
         >
-          <NavHashLink to={"/Client#top"} className="btn blueBtn">
+          <NavHashLink to={"/Client"} className="btn blueBtn">
             View entire portfolio{" "}
             <span>
               <img src={white} alt="whiteArrow" />

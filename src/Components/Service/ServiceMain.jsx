@@ -6,6 +6,11 @@ import ServiceBody from "./ServiceBody";
 import Tech from "./Tech";
 
 const ServiceMain = () => {
+  React.useEffect(() => {
+    if (!window.location.href.includes("#")) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, []);
   return (
     <>
       <NewHeader />

@@ -10,7 +10,7 @@ const Custom = ({ children }) => {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 2.3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: true,
@@ -20,7 +20,7 @@ const Custom = ({ children }) => {
       {
         breakpoint: 1250,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1.4,
           slidesToScroll: 1,
           initialSlide: 1,
           arrows: true,

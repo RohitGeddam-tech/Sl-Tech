@@ -11,11 +11,11 @@ const data = [
     details: [
       {
         title: "UI Design",
-        text: "They say that the best UI is when it is not seen at all so pardon us if you don't see any UI. We constantly attempt to follow the goldern rule :)",
+        text: "They say that the best UI is when it is not seen at all so pardon us if you don't see any UI. We constantly attempt to follow the golden rule.",
       },
       {
         title: "UX Design",
-        text: "We try to create customer delight during interaction on your interface even at the most unexpected places and enhance the experience. It's what we do :)",
+        text: "We try to create customer delight during interaction on your interface even at the most unexpected places and enhance the experience. It's what we do.",
       },
     ],
     details1: [

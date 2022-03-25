@@ -26,9 +26,14 @@ const Testimonial = () => {
           <Custom>
             <div className="testBox">
               <p>
-                “Lorem ipsum is a placeholder text commonly used to demonstrate
-                the visual form of a document or a typeface without relying on
-                meaningful content”
+                It has been an absolute pleasure working with Raj, Jeet and the
+                team at Sugarlogger. They went out of the way to include our
+                suggestions on the website design and layout while handling all
+                the work with a lot of professionalism. There were video calls
+                every week to discuss updates on the website which ensured
+                things moved at the right pace to meet timelines. The team
+                accommodated our request to add some work which was out of the
+                agreed scope as well. Our best wishes to Team Sugarlogger.
               </p>
               <h5>Saurabh Nayyar</h5>
               <p className="detail">Docbel Health</p>

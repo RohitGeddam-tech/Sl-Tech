@@ -7,6 +7,11 @@ import Team from "./Team";
 import Vision from "./Vision";
 
 const AboutMain = () => {
+  React.useEffect(() => {
+    if (!window.location.href.includes("contact")) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, []);
   return (
     <>
       <NewHeader />

@@ -158,11 +158,11 @@ const Footer = () => {
         <div className="container">
           <p>© Sugarlogger Technologies Pvt. Ltd.</p>
           <div className="footNav">
-            <NavHashLink to="/About#top">About Us</NavHashLink>
-            <NavHashLink to="/Service#top">Our Services</NavHashLink>
+            <NavHashLink to="/About">About Us</NavHashLink>
+            <NavHashLink to="/Service">Our Services</NavHashLink>
             {/* <a href="/">Our Careers</a> */}
-            <NavHashLink to="/Client#top">Our Clients</NavHashLink>
-            <NavHashLink to="/login#top">Privacy Policy</NavHashLink>
+            <NavHashLink to="/Client">Our Clients</NavHashLink>
+            <NavHashLink to="/login">Privacy Policy</NavHashLink>
           </div>
         </div>
       </div>

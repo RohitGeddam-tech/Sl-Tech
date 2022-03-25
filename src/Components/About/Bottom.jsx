@@ -39,7 +39,7 @@ const Bottom = () => {
               Lorem ipsum is a placeholder text commonly used to demonstrate the
               visual form of a document.
             </p>
-            <NavLink to={"/Service#top"} className="btn blueBtn">
+            <NavLink to={"/Service"} className="btn blueBtn">
               View our services
               <span>
                 <img src={white} alt="whiteArrow" />
@@ -57,7 +57,7 @@ const Bottom = () => {
               Lorem ipsum is a placeholder text commonly used to demonstrate the
               visual form of a document.
             </p>
-            <NavLink to={"/Client#top"} className="btn blueBtn">
+            <NavLink to={"/Client"} className="btn blueBtn">
               View our portfolio
               <span>
                 <img src={white} alt="whiteArrow" />
