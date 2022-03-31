@@ -1,5 +1,5 @@
 import React from "react";
-import white from "../../images/arrowRightWhite.svg";
+// import white from "../../images/arrowRightWhite.svg";
 import docbel from "../../images/docbel.webp";
 import mirana from "../../images/mirana.webp";
 import shycosafe from "../../images/shycosafe.webp";
@@ -16,7 +16,7 @@ const Client = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
   return (
-    <div className="client">
+    <div className="clientNew">
       <div className="container">
         <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           Our Clients

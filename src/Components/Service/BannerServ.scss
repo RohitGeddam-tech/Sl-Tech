@@ -1,4 +1,4 @@
-.bannerChild {
+.bannerServ {
   width: 100%;
   background-color: #f3f5f7;
   .container {
@@ -25,6 +25,7 @@
         line-height: 50px;
         color: #074269;
         margin-bottom: 10px;
+        margin-top: 0;
       }
       p {
         font-size: 20px;
@@ -39,7 +40,7 @@
     }
     @media (max-width: 760px) {
       flex-flow: column;
-      align-items: flex-start;
+      align-items: center;
       padding: 0;
       img {
         width: 75%;

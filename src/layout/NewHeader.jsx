@@ -141,15 +141,12 @@ const NewHeader = () => {
             <div className="navDetails">
               <NavHashLink
                 to="/"
-                activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
-                // className="navfade"
                 className={`navfade ${state ? "active" : ""}`}
               >
                 Home
               </NavHashLink>
               <NavHashLink
                 to="/Service"
-                // activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
                 className={`navfade ${
                   window.location.href.includes("Service") ? "active" : ""
                 }`}
@@ -158,8 +155,6 @@ const NewHeader = () => {
               </NavHashLink>
               <NavHashLink
                 to="/Client"
-                // activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
-                // className="navfade"
                 className={`navfade ${
                   window.location.href.includes("Client") ? "active" : ""
                 }`}
@@ -168,8 +163,6 @@ const NewHeader = () => {
               </NavHashLink>
               {/* <NavHashLink
                 to="/Career"
-                // activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
-                // className="navfade"
                 className={`navfade ${
                   window.location.href.includes("Career") ? "active" : ""
                 }`}
@@ -178,8 +171,6 @@ const NewHeader = () => {
               </NavHashLink> */}
               <NavHashLink
                 to="/About"
-                // activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
-                // className="navfade"
                 className={`navfade ${
                   window.location.href.includes("About") ? "active" : ""
                 }`}
@@ -188,7 +179,6 @@ const NewHeader = () => {
               </NavHashLink>
               <NavHashLink
                 to="/#contact"
-                // activeStyle={{ color: "#FFDD28", fontWeight: "bold" }}
                 className="btn"
               >
                 Contact Us

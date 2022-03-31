@@ -186,7 +186,7 @@ const Popup = ({ Open, Close, email, setEmail }) => {
                 type="number"
                 name="phone"
                 // type="tel"
-                inputmode="numeric"
+                inputMode="numeric"
                 required
                 autoComplete="off"
                 onChange={handleChange}
@@ -305,7 +305,8 @@ const Popup = ({ Open, Close, email, setEmail }) => {
               onClick={() => {
                 setShow(false);
                 // window.location.href = "/#top";
-                window.scrollTo({ top: 0, behavior: "smooth" });
+                navigate("/", { replace: true });
+                // window.scrollTo({ top: 0, behavior: "smooth" });
               }}
             >
               Back to homepage

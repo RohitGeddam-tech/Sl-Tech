@@ -9,7 +9,7 @@ const BannerServ = () => {
     Aos.init({ duration: 500 });
   });
   return (
-    <div className="bannerChild">
+    <div className="bannerServ">
       <div className="container">
         <div
           className="bannerBox"

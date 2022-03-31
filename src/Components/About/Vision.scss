@@ -44,6 +44,16 @@
       .visionBox {
         padding-top: 60px;
         width: 100%;
+        .visionData {
+          h1 {
+            font-size: 24px;
+            line-height: 36px;
+          }
+          p {
+            font-size: 18px;
+            line-height: 27px;
+          }
+        }
       }
     }
   }

@@ -12,7 +12,7 @@ const Testimonial = () => {
   const [width] = useWindowSize();
   const newRef = useRef(null);
   const [state, setState] = useState(0);
-  const [unscroll, setUnscroll] = useState(false);
+  // const [unscroll, setUnscroll] = useState(false);
   const [leftArrow, setLeftArrow] = useState(false);
   const [rightArrow, setRightArrow] = useState(false);
 
@@ -253,7 +253,7 @@ const Testimonial = () => {
     } else {
       setLeftArrow(false);
     }
-    console.log(state);
+    // console.log(state);
 
     if (state >= 3) {
       setRightArrow(true);

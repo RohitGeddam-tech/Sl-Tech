@@ -25,7 +25,10 @@
               color: #708ca0;
             }
             .bottom {
-              width: 100%;
+              width: 550px;
+              @media (max-width: 680px) {
+                width: 100%;
+              }
               .touch {
                 width: 100%;
                 display: flex;
@@ -33,7 +36,7 @@
                 .textInput {
                   margin-right: 10px;
                   // width: 100%;
-                  width: 350px;
+                  width: 340px;
                   @media (max-width: 680px) {
                     width: 100%;
                     margin-right: 0;

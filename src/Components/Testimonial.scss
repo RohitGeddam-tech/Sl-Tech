@@ -1,6 +1,6 @@
 .test {
   .container {
-    padding: 110px 0 120px;
+    padding: 80px 0 110px;
     .arrow {
       width: 100%;
       display: flex;
@@ -137,7 +137,7 @@
             }
           }
           .testDetails {
-            width: 100%;
+            width: max-content;
             display: flex;
             align-items: center;
             justify-content: flex-start;
@@ -163,7 +163,7 @@
                 font-size: 18px;
                 line-height: 27px;
                 color: #074269;
-                margin: 0;
+                margin: 0 !important;
               }
             }
           }
@@ -192,9 +192,10 @@
               line-height: 24px;
             }
             .testDetails {
+              width: fit-content;
               .dataVal {
                 h5 {
-                  margin-top: 25px;
+                  // margin-top: 25px;
                   font-size: 18px;
                   line-height: 27px;
                 }

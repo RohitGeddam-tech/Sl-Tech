@@ -6,10 +6,10 @@ const ServiceBody = () => {
   return (
     <div className="servBody">
       <div className="container">
-        {data.map((doc) => (
+        {data.map((doc, i) => (
           <div
             className="fullBody"
-            key={doc.title}
+            key={i}
             id={
               doc.title === "Social Media Marketing"
                 ? "socialmedia"
@@ -24,9 +24,9 @@ const ServiceBody = () => {
             </div>
             <div className="bodyRight">
               <div className="bodyDetails">
-                {doc.details.map((val) => (
+                {doc.details.map((val,i) => (
                   <>
-                    <div className={`bodyBox ${val.title}`} key={val.title}>
+                    <div className={`bodyBox ${val.title}`} key={i}>
                       <h1>{val.title}</h1>
                       <p>{val.text}</p>
                     </div>
@@ -35,9 +35,9 @@ const ServiceBody = () => {
               </div>
               {doc.details1.length > 0 ? (
                 <div className="bodyDetails a">
-                  {doc.details1.map((val) => (
+                  {doc.details1.map((val, i) => (
                     <>
-                      <div className={`bodyBox`} key={val.title}>
+                      <div className={`bodyBox`} key={i}>
                         <h1>{val.title}</h1>
                         <p>{val.text}</p>
                       </div>
