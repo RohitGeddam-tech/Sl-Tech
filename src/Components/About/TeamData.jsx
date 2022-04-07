@@ -2,16 +2,13 @@ import alok from "../../images/alok.png";
 import jeet from "../../images/jeet.png";
 import kiran from "../../images/kiran.png";
 import rajsir from "../../images/rajsir.png";
-// import darshan from "../../images/darshan.png";
-import darshan from "../../images/darshan2.jpeg";
+import darshan from "../../images/darshan.png";
+// import darshan from "../../images/darshan2.jpeg";
 import manish from "../../images/manish.png";
 import jeremy from "../../images/jeremy.png";
 import anujita from "../../images/anujita.png";
-// import rohit from "../../images/rohitAuto.jpg";
-// import rohit from "../../images/rohit.jpg";
-// import rohit from "../../images/rohitSnap.jpg";
-// import rohit from "../../images/rohitNew.jpg";
-import rohit from "../../images/rohitDop.jpg";
+// import rohit from "../../images/rohitDop.jpg";
+import rohit from "../../images/rohiDefault.webp";
 
 const teamData = [
   {

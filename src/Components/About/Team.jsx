@@ -2,6 +2,7 @@ import React from "react";
 import data from "./TeamData";
 import "./Team.scss";
 import Aos from "aos";
+import LazyLoad from "react-lazyload";
 
 const Team = () => {
   React.useEffect(() => {
@@ -31,10 +32,12 @@ const Team = () => {
               data-aos-duration="1000"
               data-aos-once="true"
             >
-              <img src={doc.img} alt={doc.name} />
+              <LazyLoad once placeholder={<div className="imgBanner"></div>}>
+                <img src={doc.img} alt={doc.name} />
+              </LazyLoad>
               <h1>{doc.name}</h1>
               <span>{doc.title}</span>
-              <p>{doc.text}</p>
+              {/* <p>{doc.text}</p> */}
             </div>
           ))}
         </div>

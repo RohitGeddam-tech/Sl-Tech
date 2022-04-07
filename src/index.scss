@@ -151,6 +151,23 @@ body {
     }
   }
 
+  .imgBanner {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #708ca0;
+    min-height: 150px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .lazyload-wrapper {
+    img {
+      width: 100%;
+    }
+  }
+
   .btn {
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -167,6 +184,11 @@ body {
     cursor: pointer;
     outline: none;
     transition: all 0.3s ease;
+    @media (max-width: 630px) {
+      font-size: 18px;
+      line-height: 27px;
+      padding: 9px 33px;
+    }
     &:disabled {
       opacity: 0.5;
       cursor: not-allowed;
@@ -192,6 +214,9 @@ body {
       &:hover {
         filter: none;
         background-color: #32a9ff !important;
+      }
+      @media (max-width: 630px) {
+        padding: 7px 33px;
       }
     }
     span {
@@ -263,6 +288,10 @@ body {
       span {
         color: #32a9ff;
       }
+      @media (max-width: 630px) {
+        font-size: 16px;
+        line-height: 24px;
+      }
     }
     .input {
       width: 100%;
@@ -284,6 +313,11 @@ body {
       color: #333;
       outline: none;
       transition: all 1s ease;
+      @media (max-width: 630px) {
+        font-size: 16px;
+        line-height: 24px;
+        height: 45px;
+      }
 
       &::-webkit-input-placeholder,
       &:-moz-placeholder,

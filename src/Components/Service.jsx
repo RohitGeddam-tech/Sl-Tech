@@ -9,6 +9,7 @@ import "./Service.scss";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { NavHashLink } from "react-router-hash-link";
+import LazyLoad from "react-lazyload";
 
 const Service = () => {
   React.useEffect(() => {
@@ -43,7 +44,9 @@ const Service = () => {
         >
           <div className="contain boxDesign">
             <div className="boxHover"></div>
-            <img src={design} alt="Web Design" />
+            <LazyLoad once placeholder={<div className="imgBanner"></div>}>
+              <img src={design} alt="Web Design" />
+            </LazyLoad>
             <h3>Web Design</h3>
           </div>
         </NavHashLink>
@@ -56,7 +59,9 @@ const Service = () => {
         >
           <div className="contain boxWeb">
             <div className="boxHover"></div>
-            <img src={web} alt="Web Development" />
+            <LazyLoad once placeholder={<div className="imgBanner"></div>}>
+              <img src={web} alt="Web Development" />
+            </LazyLoad>
             <h3>Web Development</h3>
           </div>
         </NavHashLink>
@@ -69,7 +74,9 @@ const Service = () => {
         >
           <div className="contain boxGraph">
             <div className="boxHover"></div>
-            <img src={graph} alt="Graphic Design" />
+            <LazyLoad once placeholder={<div className="imgBanner"></div>}>
+              <img src={graph} alt="Graphic Design" />
+            </LazyLoad>
             <h3>Graphic Design</h3>
           </div>
         </NavHashLink>
@@ -82,7 +89,9 @@ const Service = () => {
         >
           <div className="contain boxSocial">
             <div className="boxHover"></div>
-            <img src={social} alt="Social Media Marketing" />
+            <LazyLoad once placeholder={<div className="imgBanner"></div>}>
+              <img src={social} alt="Social Media Marketing" />
+            </LazyLoad>
             <h3>Social Media Marketing</h3>
           </div>
         </NavHashLink>
@@ -95,7 +104,10 @@ const Service = () => {
         >
           <div className="contain boxVid">
             <div className="boxHover"></div>
-            <img src={vid} alt="Video Animation" />
+            <LazyLoad once placeholder={<div className="imgBanner"></div>}>
+              <img src={vid} alt="Video Animation" />
+              {/* <div className="imgBanner"></div> */}
+            </LazyLoad>
             <h3>Video Animation</h3>
           </div>
         </NavHashLink>

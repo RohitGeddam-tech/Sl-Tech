@@ -6,7 +6,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    img {
+    // img {
+    //   width: 40%;
+    // }
+    .lazyload-wrapper {
+      width: 40%;
+    }
+    .imgBanner {
       width: 40%;
     }
     .bannerBox {
@@ -33,8 +39,8 @@
       }
       .bottom {
         margin-top: 35px;
-        a{
-            width: max-content;
+        a {
+          width: max-content;
         }
       }
     }
@@ -42,7 +48,19 @@
       flex-flow: column;
       align-items: center;
       padding: 0;
-      img {
+      // img {
+      //   width: 75%;
+      //   order: 1;
+      //   padding-top: 40px;
+      //   margin-bottom: 20px;
+      // }
+      .lazyload-wrapper {
+        width: 75%;
+        order: 1;
+        padding-top: 40px;
+        margin-bottom: 20px;
+      }
+      .imgBanner {
         width: 75%;
         order: 1;
         padding-top: 40px;

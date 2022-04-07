@@ -22,9 +22,12 @@ const Vision = () => {
           <div className="visionData">
             <h1>Our Vision</h1>
             <p>
-              To consistently lead technology innovation and provide technology
+              {/* To consistently lead technology innovation and provide technology
               software services and solutions with exceptional quality, sharp
-              turn around time and cost effectiveness.
+              turn around time and cost effectiveness. */}
+              To offer transparent and ethical technology solutions that
+              continually outperforms our customers expectations and inspires
+              their businesses to thrive.
             </p>
           </div>
         </div>
@@ -38,9 +41,9 @@ const Vision = () => {
           <div className="visionData">
             <h1>Our Mission</h1>
             <p>
-              Lorem ipsum is a placeholder text commonly used to demonstrate the
-              visual form of a document or a typeface without relying on
-              meaningful content
+              We stand apart as a leading technology innovator highly-visible,
+              massively effective, and undeniably attractive websites to make
+              our customers look amazing.
             </p>
           </div>
         </div>
@@ -54,9 +57,8 @@ const Vision = () => {
           <div className="visionData">
             <h1>Our Values</h1>
             <p>
-              Lorem ipsum is a placeholder text commonly used to demonstrate the
-              visual form of a document or a typeface without relying on
-              meaningful content
+              We aim to be honest, authentic, and act with integrity, serving
+              our customers using principled motives and authoritative choices.
             </p>
           </div>
         </div>

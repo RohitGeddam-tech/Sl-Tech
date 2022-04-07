@@ -5,6 +5,7 @@ import Popup from "./Modal";
 import CustomSlider from "./Slider";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import LazyLoad from "react-lazyload";
 
 const BannerSlider = () => {
   const [email, setEmail] = useState("");
@@ -55,11 +56,14 @@ const BannerSlider = () => {
                 data-aos-duration="1000"
                 data-aos-once="true"
               >
-                <h1>Helping you get your business online</h1>
+                {/* <h1>Helping you get your business online</h1> */}
+                <h1>Standout Online Strategies to Sell Your Brand Better</h1>
                 <p>
-                  Setting up an online presence does not happen overnight. We
+                  {/* Setting up an online presence does not happen overnight. We
                   help you adopt the right strategies & digital platforms to
-                  build an effective online presence.
+                  build an effective online presence. */}
+                  Get your business on track with an online presence that wows,
+                  lasts, and impels customers to use your brand.
                 </p>
                 <div className="bottom">
                   <div className="touch">
@@ -89,14 +93,16 @@ const BannerSlider = () => {
                   </div>
                 </div>
               </div>
-              <img
-                src={lap}
-                alt="banner"
-                loading="lazy"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-                data-aos-once="true"
-              />
+              <LazyLoad once placeholder={<div className="imgBanner"></div>}>
+                <img
+                  src={lap}
+                  alt="banner"
+                  loading="lazy"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-once="true"
+                />
+              </LazyLoad>
             </div>
           </div>
         </div>

@@ -12,6 +12,7 @@ import ill from "../../images/ill.png";
 import figma from "../../images/figma.png";
 import "./Tech.scss";
 import Aos from "aos";
+import LazyLoad from "react-lazyload";
 
 const data = [
   {
@@ -81,7 +82,12 @@ const Tech = () => {
         <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           Our Technology Stack
         </h2>
-        <div className="techHead" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+        <div
+          className="techHead"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
           <div className="blockTech">
             <button
               className={skills === "design" ? "tabs a activeTab" : "tabs a"}
@@ -112,7 +118,12 @@ const Tech = () => {
               {/* <div className="detailBox"> */}
               {value.map((doc, i) => (
                 <div className="allDetails" key={i}>
-                  <img src={doc.img} alt={doc.text} />
+                  {/* <LazyLoad
+                    once
+                    placeholder={<div className="imgBanner"></div>}
+                  > */}
+                    <img src={doc.img} alt={doc.text} />
+                  {/* </LazyLoad> */}
                   <p>{doc.text}</p>
                 </div>
               ))}

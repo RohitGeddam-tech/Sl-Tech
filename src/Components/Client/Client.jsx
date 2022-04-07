@@ -6,6 +6,7 @@ import shycosafe from "../../images/shycosafe.webp";
 import rnr from "../../images/rnr.webp";
 import "./Client.scss";
 import Aos from "aos";
+import LazyLoad from "react-lazyload";
 // import { NavHashLink } from "react-router-hash-link";
 
 const Client = () => {
@@ -34,7 +35,9 @@ const Client = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={docbel} alt="Docbel Health" />
+            <LazyLoad once placeholder={<div className="imgBanner"></div>}>
+              <img src={docbel} alt="Docbel Health" />
+            </LazyLoad>
             <h3>Docbel Health</h3>
             <p>
               End to end e-commerce setup for Docbel Health on the Shopify
@@ -50,7 +53,9 @@ const Client = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={mirana} alt="Mirana Resort" />
+            <LazyLoad once placeholder={<div className="imgBanner"></div>}>
+              <img src={mirana} alt="Mirana Resort" />
+            </LazyLoad>
             <h3>Mirana Resort</h3>
             <p>
               Complete web design and development for a paradise resort in
@@ -68,7 +73,9 @@ const Client = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={shycosafe} alt="Shycosafe" />
+            <LazyLoad once placeholder={<div className="imgBanner"></div>}>
+              <img src={shycosafe} alt="Shycosafe" />
+            </LazyLoad>
             <h3>Shycosafe</h3>
             <p>
               A portfolio landing page for stands & accessories provider
@@ -84,7 +91,9 @@ const Client = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={rnr} alt="Blogs - Research & Ranking" />
+            <LazyLoad once placeholder={<div className="imgBanner"></div>}>
+              <img src={rnr} alt="Blogs - Research & Ranking" />
+            </LazyLoad>
             <h3>Blogs - Research & Ranking</h3>
             <p>
               Blog setup and integration for the fintech firm, powered by

@@ -21,11 +21,11 @@ const data = [
     details1: [
       {
         title: "Wireframing",
-        text: "We take great care while designing and developing to create a seamless experience for your customer across all devices",
+        text: "We take great care while designing and developing to create a seamless experience for your customer across all devices.",
       },
       {
         title: "Interactive Prototyping",
-        text: "We use the latest softwares to design your website, so that you can see how it behaves even before is coded ",
+        text: "We use the latest softwares to design your website, so that you can see how it behaves even before is coded.",
       },
     ],
   },
@@ -35,21 +35,21 @@ const data = [
     details: [
       {
         title: "Interface Development",
-        text: "To make the interaction easy for the website visitor we try to solve complex problems for implementing visual and interactive elements that users engage with",
+        text: "To make the interaction easy for the website visitor we try to solve complex problems for implementing visual and interactive elements that users engage with.",
       },
       {
         title: "Backend Development",
-        text: "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content",
+        text: "We install powerful, crash-proof infrastructure that makes your site frictionless and functional.",
       },
     ],
     details1: [
       {
         title: "Mobile Development",
-        text: "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content",
+        text: "Your customers browse on the go. We're designing your site to be ready for them.",
       },
       {
         title: "E-commerce setup",
-        text: "We'll take care of every aspect for setting up your shop online, so that you can focus on your products and business",
+        text: "We'll take care of every aspect for setting up your shop online, so that you can focus on your products and business.",
       },
     ],
   },
@@ -59,11 +59,11 @@ const data = [
     details: [
       {
         title: "Graphic Illustrations",
-        text: "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content",
+        text: "We take care to use bold, consistent, and vibrant imagery to strengthen your business brand.",
       },
       {
         title: "Quality Optimization",
-        text: "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content",
+        text: "You'd be surprised how powerful it can be when we use the visual medium to reinforce who you are and what you stand for.",
       },
     ],
     details1: [],
@@ -74,11 +74,11 @@ const data = [
     details: [
       {
         title: "Strategy Formulation",
-        text: "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content",
+        text: "With precision accuracy, we use social media strategies that meet your specific goals.",
       },
       {
         title: "Multi-platform campaigns",
-        text: "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content",
+        text: "We broadcast your message across several platforms so you don't miss a single customer.",
       },
     ],
     details1: [],
@@ -89,11 +89,11 @@ const data = [
     details: [
       {
         title: "Motion Graphics",
-        text: "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content",
+        text: "We play with visual cues to direct workflow and guide your customers where you want them to go.",
       },
       {
         title: "Audacity",
-        text: "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content",
+        text: "Even with simple sound bytes, we reinforce every customer action on your website.",
       },
     ],
     details1: [],

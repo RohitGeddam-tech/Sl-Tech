@@ -42,9 +42,20 @@
         }
         &.plain {
           align-items: flex-start;
-          .boxHover{
+          .boxHover {
             display: none;
           }
+        }
+        .imgBanner {
+          min-height: 100px;
+          width: 100px;
+          background-color: #68c0ff;
+        }
+        .lazyload-wrapper {
+          // width: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
         &.boxDesign {
           background: #e3f3ff;
@@ -57,8 +68,8 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
-          &:hover{
-            .boxHover{
+          &:hover {
+            .boxHover {
               display: block;
             }
           }
@@ -74,8 +85,8 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
-          &:hover{
-            .boxHover{
+          &:hover {
+            .boxHover {
               display: block;
               border: 2px dashed #074269;
             }
@@ -92,10 +103,10 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
-          &:hover{
-            .boxHover{
+          &:hover {
+            .boxHover {
               display: block;
-              border: 2px dashed #D44638;
+              border: 2px dashed #d44638;
             }
           }
         }
@@ -110,10 +121,10 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
-          &:hover{
-            .boxHover{
+          &:hover {
+            .boxHover {
               display: block;
-              border: 2px dashed #FF9D6C;
+              border: 2px dashed #ff9d6c;
             }
           }
         }
@@ -128,8 +139,8 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
-          &:hover{
-            .boxHover{
+          &:hover {
+            .boxHover {
               display: block;
               border: 2px dashed #074269;
             }
@@ -202,8 +213,15 @@
             }
           }
           img {
-            width: 65px;
+            width: 80px;
             padding-left: 30px;
+          }
+          .imgBanner {
+            width: 80px;
+            padding-left: 30px;
+          }
+          .lazyload-wrapper{
+            width: auto !important;
           }
           h3 {
             font-size: 22px;

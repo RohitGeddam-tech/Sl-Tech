@@ -1,6 +1,7 @@
 import React from "react";
 import "./ServiceBody.scss";
 import data from "./Data";
+import LazyLoad from "react-lazyload";
 
 const ServiceBody = () => {
   return (
@@ -18,13 +19,15 @@ const ServiceBody = () => {
           >
             <div className="bodyLeft">
               <div className="imgClass">
-                <img src={doc.img} alt={doc.title} />
+                <LazyLoad once placeholder={<div className="imgBanner"></div>}>
+                  <img src={doc.img} alt={doc.title} />
+                </LazyLoad>
                 <p className={doc.title}>{doc.title}</p>
               </div>
             </div>
             <div className="bodyRight">
               <div className="bodyDetails">
-                {doc.details.map((val,i) => (
+                {doc.details.map((val, i) => (
                   <>
                     <div className={`bodyBox ${val.title}`} key={i}>
                       <h1>{val.title}</h1>
