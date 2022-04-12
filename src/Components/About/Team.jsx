@@ -37,7 +37,7 @@ const Team = () => {
               </LazyLoad>
               <h1>{doc.name}</h1>
               <span>{doc.title}</span>
-              {/* <p>{doc.text}</p> */}
+              <p>{doc.text}</p>
             </div>
           ))}
         </div>

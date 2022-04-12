@@ -3,6 +3,8 @@ import "./Testimonial.scss";
 import left from "../images/arrowLeft.svg";
 import right from "../images/arrowRight.svg";
 import testimon from "../images/test.png";
+import onkar from "../images/onkar.jpeg";
+import rajeev from "../images/rajeev.jpeg";
 // import Custom from "./Custom";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -51,7 +53,7 @@ const Testimonial = () => {
         setState(stateIndex);
       }
     }
-    if (width < 1020 && width > 1020) {
+    if (width < 1020 && width > 650) {
       if (state === 0) {
         const stateIndex = state + 1;
         newRef.current.style.transform = `translate(-300px)`;
@@ -76,24 +78,24 @@ const Testimonial = () => {
       }
       if (state === 1) {
         const stateIndex = state + 1;
-        newRef.current.style.transform = `translate(-960px)`;
+        newRef.current.style.transform = `translate(-1180px)`;
         setState(stateIndex);
       }
       if (state === 2) {
         const stateIndex = state + 1;
-        newRef.current.style.transform = `translate(-1340px)`;
+        newRef.current.style.transform = `translate(-1540px)`;
         setState(stateIndex);
       }
     }
     if (width >= 1270) {
       if (state === 0) {
         const stateIndex = state + 1;
-        newRef.current.style.transform = `translate(-370px)`;
+        newRef.current.style.transform = `translate(-570px)`;
         setState(stateIndex);
       }
       if (state === 1) {
         const stateIndex = state + 1;
-        newRef.current.style.transform = `translate(-760px)`;
+        newRef.current.style.transform = `translate(-1060px)`;
         setState(stateIndex);
       }
       if (state === 2) {
@@ -167,7 +169,7 @@ const Testimonial = () => {
     if (width >= 1270) {
       if (state === 2) {
         const stateIndex = state - 1;
-        newRef.current.style.transform = `translate(-370px)`;
+        newRef.current.style.transform = `translate(-570px)`;
         setState(stateIndex);
       }
       if (state === 3) {
@@ -192,14 +194,14 @@ const Testimonial = () => {
     if (width < 650 && width > 405) {
       newRef.current.style.transform = `translate(-340px)`;
     }
-    if (width < 1020 && width > 1020) {
+    if (width < 1020 && width > 650) {
       newRef.current.style.transform = `translate(-300px)`;
     }
     if (width < 1270 && width > 1020) {
       newRef.current.style.transform = `translate(-570px)`;
     }
     if (width >= 1270) {
-      newRef.current.style.transform = `translate(-370px)`;
+      newRef.current.style.transform = `translate(-570px)`;
     }
     setState(1);
   };
@@ -211,14 +213,14 @@ const Testimonial = () => {
     if (width < 650 && width > 405) {
       newRef.current.style.transform = `translate(-720px)`;
     }
-    if (width < 1020 && width > 1020) {
+    if (width < 1020 && width > 650) {
       newRef.current.style.transform = `translate(-600px)`;
     }
     if (width < 1270 && width > 1020) {
-      newRef.current.style.transform = `translate(-960px)`;
+      newRef.current.style.transform = `translate(-1180px)`;
     }
     if (width >= 1270) {
-      newRef.current.style.transform = `translate(-760px)`;
+      newRef.current.style.transform = `translate(-1060px)`;
     }
     setState(2);
   };
@@ -230,7 +232,7 @@ const Testimonial = () => {
     if (width < 650 && width > 405) {
       newRef.current.style.transform = `translate(-1080px)`;
     }
-    if (width < 1020 && width > 1020) {
+    if (width < 1020 && width > 650) {
       newRef.current.style.transform = `translate(-900px)`;
     }
     if (width < 1270 && width > 1020) {
@@ -255,7 +257,7 @@ const Testimonial = () => {
     }
     // console.log(state);
 
-    if (state >= 3) {
+    if (state >= 2) {
       setRightArrow(true);
     } else {
       setRightArrow(false);
@@ -306,12 +308,10 @@ const Testimonial = () => {
                   handling all the work with a lot of professionalism. There
                   were video calls every week to discuss updates on the website
                   which ensured things moved at the right pace to meet
-                  timelines. The team accommodated our request to add some work
-                  which was out of the agreed scope as well. Our best wishes to
-                  Team Sugarlogger.
+                  timelines. Our best wishes to Team Sugarlogger.
                 </p>
                 <div className="testDetails">
-                  <img src={testimon} alt="testimonial" />
+                  <img src={testimon} alt="Saurabh Nayyar" />
                   <div className="dataVal">
                     <h5>Saurabh Nayyar</h5>
                     <p className="detail">Docbel Health</p>
@@ -320,12 +320,14 @@ const Testimonial = () => {
               </div>
               <div className="testBox">
                 <p>
-                  “Lorem ipsum is a placeholder text commonly used to
-                  demonstrate the visual form of a document or a typeface
-                  without relying on meaningful content”
+                  Web development that is both reliable and affordable. The team
+                  at Sugarlogger tech is particularly gifted at turning their
+                  clients’ rough-sketch visions into glossy, combat-ready web
+                  products. Responsive, personable, visionary: three reasons
+                  this company comes highly recommended.
                 </p>
                 <div className="testDetails">
-                  <img src={testimon} alt="testimonial" />
+                  <img src={onkar} alt="Rohit Onkar" />
                   <div className="dataVal">
                     <h5>Rohit Onkar</h5>
                     <p className="detail">Research & Ranking</p>
@@ -334,19 +336,21 @@ const Testimonial = () => {
               </div>
               <div className="testBox">
                 <p>
-                  “Lorem ipsum is a placeholder text commonly used to
-                  demonstrate the visual form of a document or a typeface
-                  without relying on meaningful content”
+                  Sugarlogger Tech has done a wonderful job redesigning our
+                  website to take it from plain and functional to amazingly
+                  professional. We would highly recommend Sugarlogger Tech to
+                  any business that needs a hand improving their internet
+                  traffic or their business.
                 </p>
                 <div className="testDetails">
-                  <img src={testimon} alt="testimonial" />
+                  <img src={rajeev} alt="Rajeev Chakrabarti" />
                   <div className="dataVal">
-                    <h5>Saurabh Nayyar</h5>
-                    <p className="detail">Docbel Health</p>
+                    <h5>Rajeev Chakrabarti</h5>
+                    <p className="detail">Mirana Resort</p>
                   </div>
                 </div>
               </div>
-              <div className="testBox">
+              {/* <div className="testBox">
                 <p>
                   “Lorem ipsum is a placeholder text commonly used to
                   demonstrate the visual form of a document or a typeface
@@ -359,7 +363,7 @@ const Testimonial = () => {
                     <p className="detail">Docbel Health</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="dots">
@@ -375,10 +379,10 @@ const Testimonial = () => {
               className={`dot ${state === 2 ? "active" : ""}`}
               onClick={handleClick3}
             ></div>
-            <div
+            {/* <div
               className={`dot ${state === 3 ? "active" : ""}`}
               onClick={handleClick4}
-            ></div>
+            ></div> */}
           </div>
         </div>
       </div>

@@ -107,7 +107,7 @@
         .testBox {
           // width: max-content !important;
           // width: 420px;
-          flex: 0 0 420px;
+          flex: 0 0 580px;
           height: 330px;
           background: #f3f5f7;
           border: 1px solid #f3f5f7;
@@ -146,6 +146,8 @@
             bottom: 30px;
             img {
               width: 70px;
+              height: 70px;
+              border-radius: 100px;
             }
             .dataVal {
               padding-left: 25px;
@@ -173,15 +175,15 @@
             padding: 22px;
             // width: 340px;
             flex: 0 0 340px !important;
-            min-height: 280px !important;
-            max-height: 520px !important;
+            min-height: 400px !important;
+            max-height: 440px !important;
             height: max-content;
             border-radius: 10px;
             @media (max-width: 406px) {
               flex: 0 0 300px !important;
-              max-height: 580px !important;
+              max-height: 440px !important;
               &:first-child {
-                height: 580px !important;
+                height: 440px !important;
               }
             }
             &:first-child {
