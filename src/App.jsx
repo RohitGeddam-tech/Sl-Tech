@@ -3,8 +3,9 @@ import React from "react";
 import BannerSlider from "./Components/Banner";
 import Client from "./Components/Client";
 import Service from "./Components/Service";
-// import Test from "./Components/Test";
-import Testimonial from "./Components/TestimonialCopy";
+// import Testimonial from "./Components/Testimonial";
+// import Testimonial from "./Components/TestimonialCopy";
+import Testimonial from "./Components/TestimonialNew";
 import Footer from "./layout/Footer";
 import NewHeader from "./layout/NewHeader";
 

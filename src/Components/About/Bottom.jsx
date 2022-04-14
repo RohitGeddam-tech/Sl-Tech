@@ -36,8 +36,8 @@ const Bottom = () => {
           >
             <h1>View the team’s services</h1>
             <p>
-              Lorem ipsum is a placeholder text commonly used to demonstrate the
-              visual form of a document.
+              What’s work for you is fun for us. Have a look at what we do
+              better than anyone else.
             </p>
             <NavLink to={"/Service"} className="btn blueBtn">
               View our services
@@ -54,8 +54,8 @@ const Bottom = () => {
           >
             <h1>View the team’s work!</h1>
             <p>
-              Lorem ipsum is a placeholder text commonly used to demonstrate the
-              visual form of a document.
+              Check out what we’ve hung up on our “virtual fridge” to see what
+              we’ve been up to lately.
             </p>
             <NavLink to={"/Client"} className="btn blueBtn">
               View our portfolio

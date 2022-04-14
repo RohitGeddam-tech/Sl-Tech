@@ -23,13 +23,13 @@
     .allTeam {
       display: flex;
       align-items: flex-start;
-      justify-content: space-between;
+      // justify-content: space-between;
       flex-flow: row wrap;
       padding-bottom: 80px;
       .teamBox {
         width: 260px;
         padding: 70px 0 30px;
-        margin-right: 8px;
+        margin-right: 18px;
         img {
           width: 260px;
           height: 210px;

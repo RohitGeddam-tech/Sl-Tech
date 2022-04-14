@@ -300,7 +300,7 @@ const Testimonial = () => {
         <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <div className="slider">
             <div className={`slide`} ref={newRef}>
-              <div className="testBox">
+            <div className="testBox">
                 <p>
                   It has been an absolute pleasure working with Raj, Jeet and
                   the team at Sugarlogger. They went out of the way to include

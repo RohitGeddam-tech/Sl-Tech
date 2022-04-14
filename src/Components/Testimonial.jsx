@@ -2,6 +2,11 @@ import React from "react";
 import "./Testimonial.scss";
 // import left from "../images/arrowLeft.svg";
 // import right from "../images/arrowRight.svg";
+// import left from "../images/arrowLeft.svg";
+// import right from "../images/arrowRight.svg";
+import testimon from "../images/test.png";
+import onkar from "../images/onkar.jpeg";
+import rajeev from "../images/rajeev.jpeg";
 import Custom from "./Custom";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -31,40 +36,63 @@ const Testimonial = () => {
                 suggestions on the website design and layout while handling all
                 the work with a lot of professionalism. There were video calls
                 every week to discuss updates on the website which ensured
-                things moved at the right pace to meet timelines. The team
-                accommodated our request to add some work which was out of the
-                agreed scope as well. Our best wishes to Team Sugarlogger.
+                things moved at the right pace to meet timelines. Our best
+                wishes to Team Sugarlogger.
               </p>
-              <h5>Saurabh Nayyar</h5>
-              <p className="detail">Docbel Health</p>
+              <div className="testDetails">
+                <img src={testimon} alt="Saurabh Nayyar" />
+                <div className="dataVal">
+                  <h5>Saurabh Nayyar</h5>
+                  <p className="detail">Docbel Health</p>
+                </div>
+              </div>
             </div>
             <div className="testBox">
               <p>
-                “Lorem ipsum is a placeholder text commonly used to demonstrate
-                the visual form of a document or a typeface without relying on
-                meaningful content”
+                Web development that is both reliable and affordable. The team
+                at Sugarlogger tech is particularly gifted at turning their
+                clients’ rough-sketch visions into glossy, combat-ready web
+                products. Responsive, personable, visionary: three reasons this
+                company comes highly recommended.
               </p>
-              <h5>Rohit Onkar</h5>
-              <p className="detail">Research & Ranking</p>
+              <div className="testDetails">
+                <img src={onkar} alt="Rohit Onkar" />
+                <div className="dataVal">
+                  <h5>Rohit Onkar</h5>
+                  <p className="detail">Research & Ranking</p>
+                </div>
+              </div>
             </div>
             <div className="testBox">
               <p>
-                “Lorem ipsum is a placeholder text commonly used to demonstrate
-                the visual form of a document or a typeface without relying on
-                meaningful content”
+                Sugarlogger Tech has done a wonderful job redesigning our
+                website to take it from plain and functional to amazingly
+                professional. We would highly recommend Sugarlogger Tech to any
+                business that needs a hand improving their internet traffic or
+                their business.
               </p>
-              <h5>Saurabh Nayyar</h5>
-              <p className="detail">Docbel Health</p>
+              <div className="testDetails">
+                <img src={rajeev} alt="Rajeev Chakrabarti" />
+                <div className="dataVal">
+                  <h5>Rajeev Chakrabarti</h5>
+                  <p className="detail">Mirana Resort</p>
+                </div>
+              </div>
             </div>
-            <div className="testBox">
-              <p>
-                “Lorem ipsum is a placeholder text commonly used to demonstrate
-                the visual form of a document or a typeface without relying on
-                meaningful content”
-              </p>
-              <h5>Saurabh Nayyar</h5>
-              <p className="detail">Docbel Health</p>
-            </div>
+            {/* <div className="testBox">
+                <p>
+                  “Lorem ipsum is a placeholder text commonly used to
+                  demonstrate the visual form of a document or a typeface
+                  without relying on meaningful content”
+                </p>
+                <div className="testDetails">
+                  <img src={testimon} alt="testimonial" />
+                  <div className="dataVal">
+                    <h5>Saurabh Nayyar</h5>
+                    <p className="detail">Docbel Health</p>
+                  </div>
+                </div>
+              </div> */}
           </Custom>
         </div>
       </div>
