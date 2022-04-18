@@ -4,8 +4,8 @@ import BannerSlider from "./Components/Banner";
 import Client from "./Components/Client";
 import Service from "./Components/Service";
 // import Testimonial from "./Components/Testimonial";
-// import Testimonial from "./Components/TestimonialCopy";
-import Testimonial from "./Components/TestimonialNew";
+import Testimonial from "./Components/TestimonialCopy";
+// import Testimonial from "./Components/TestimonialNew";
 import Footer from "./layout/Footer";
 import NewHeader from "./layout/NewHeader";
 

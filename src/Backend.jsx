@@ -27,7 +27,7 @@ const Backend = () => {
     setAlertState({ open: false, message: "", type: "success" });
   };
 
-  useEffect(() => {
+  const fetchData = () => {
     if (localStorage.getItem("accessToken") !== null) {
       const tokenData = localStorage.getItem("accessToken");
       const token = JSON.stringify(tokenData);
@@ -35,7 +35,7 @@ const Backend = () => {
         Authorization: `Bearer ${token.slice(1, -1)}`,
       };
       axios
-        .get(`${process.env.REACT_APP_PUBLIC_URL}leads`, {
+        .get(`${process.env.REACT_APP_PUBLIC_URL}leads?page=${current}`, {
           headers: headers,
         })
         .then((res) => {
@@ -70,7 +70,17 @@ const Backend = () => {
       // window.location.href = "/#top";
       navigate("/", { replace: true });
     }
+  };
+
+  useEffect(() => {
+    if (data.length === 0) {
+      fetchData();
+    }
   }, []);
+
+  useEffect(() => {
+    fetchData();
+  }, [current]);
 
   const handlePageClick = (data) => {
     // console.log(data.selected);

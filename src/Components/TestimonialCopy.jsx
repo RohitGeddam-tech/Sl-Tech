@@ -9,6 +9,7 @@ import rajeev from "../images/rajeev.jpeg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import useWindowSize from "../layout/useWindowSize";
+import { useSwipeable } from "react-swipeable";
 
 const Testimonial = () => {
   const [width] = useWindowSize();
@@ -19,89 +20,91 @@ const Testimonial = () => {
   const [rightArrow, setRightArrow] = useState(false);
 
   const handleRight = () => {
-    if (width < 405 && width > 255) {
-      if (state === 0) {
-        const stateIndex = state + 1;
-        newRef.current.style.transform = `translate(-310px)`;
-        setState(stateIndex);
+    if (!rightArrow) {
+      if (width < 405 && width > 255) {
+        if (state === 0) {
+          const stateIndex = state + 1;
+          newRef.current.style.transform = `translate(-310px)`;
+          setState(stateIndex);
+        }
+        if (state === 1) {
+          const stateIndex = state + 1;
+          newRef.current.style.transform = `translate(-640px)`;
+          setState(stateIndex);
+        }
+        if (state === 2) {
+          const stateIndex = state + 1;
+          newRef.current.style.transform = `translate(-980px)`;
+          setState(stateIndex);
+        }
       }
-      if (state === 1) {
-        const stateIndex = state + 1;
-        newRef.current.style.transform = `translate(-640px)`;
-        setState(stateIndex);
+      if (width < 650 && width > 405) {
+        if (state === 0) {
+          const stateIndex = state + 1;
+          newRef.current.style.transform = `translate(-340px)`;
+          setState(stateIndex);
+        }
+        if (state === 1) {
+          const stateIndex = state + 1;
+          newRef.current.style.transform = `translate(-720px)`;
+          setState(stateIndex);
+        }
+        if (state === 2) {
+          const stateIndex = state + 1;
+          newRef.current.style.transform = `translate(-1080px)`;
+          setState(stateIndex);
+        }
       }
-      if (state === 2) {
-        const stateIndex = state + 1;
-        newRef.current.style.transform = `translate(-980px)`;
-        setState(stateIndex);
+      if (width < 1020 && width > 650) {
+        if (state === 0) {
+          const stateIndex = state + 1;
+          newRef.current.style.transform = `translate(-300px)`;
+          setState(stateIndex);
+        }
+        if (state === 1) {
+          const stateIndex = state + 1;
+          newRef.current.style.transform = `translate(-600px)`;
+          setState(stateIndex);
+        }
+        if (state === 2) {
+          const stateIndex = state + 1;
+          newRef.current.style.transform = `translate(-900px)`;
+          setState(stateIndex);
+        }
       }
-    }
-    if (width < 650 && width > 405) {
-      if (state === 0) {
-        const stateIndex = state + 1;
-        newRef.current.style.transform = `translate(-340px)`;
-        setState(stateIndex);
+      if (width < 1270 && width > 1020) {
+        if (state === 0) {
+          const stateIndex = state + 1;
+          newRef.current.style.transform = `translate(-570px)`;
+          setState(stateIndex);
+        }
+        if (state === 1) {
+          const stateIndex = state + 1;
+          newRef.current.style.transform = `translate(-1180px)`;
+          setState(stateIndex);
+        }
+        if (state === 2) {
+          const stateIndex = state + 1;
+          newRef.current.style.transform = `translate(-1540px)`;
+          setState(stateIndex);
+        }
       }
-      if (state === 1) {
-        const stateIndex = state + 1;
-        newRef.current.style.transform = `translate(-720px)`;
-        setState(stateIndex);
-      }
-      if (state === 2) {
-        const stateIndex = state + 1;
-        newRef.current.style.transform = `translate(-1080px)`;
-        setState(stateIndex);
-      }
-    }
-    if (width < 1020 && width > 650) {
-      if (state === 0) {
-        const stateIndex = state + 1;
-        newRef.current.style.transform = `translate(-300px)`;
-        setState(stateIndex);
-      }
-      if (state === 1) {
-        const stateIndex = state + 1;
-        newRef.current.style.transform = `translate(-600px)`;
-        setState(stateIndex);
-      }
-      if (state === 2) {
-        const stateIndex = state + 1;
-        newRef.current.style.transform = `translate(-900px)`;
-        setState(stateIndex);
-      }
-    }
-    if (width < 1270 && width > 1020) {
-      if (state === 0) {
-        const stateIndex = state + 1;
-        newRef.current.style.transform = `translate(-570px)`;
-        setState(stateIndex);
-      }
-      if (state === 1) {
-        const stateIndex = state + 1;
-        newRef.current.style.transform = `translate(-1180px)`;
-        setState(stateIndex);
-      }
-      if (state === 2) {
-        const stateIndex = state + 1;
-        newRef.current.style.transform = `translate(-1540px)`;
-        setState(stateIndex);
-      }
-    }
-    if (width >= 1270) {
-      if (state === 0) {
-        const stateIndex = state + 1;
-        newRef.current.style.transform = `translate(-570px)`;
-        setState(stateIndex);
-      }
-      if (state === 1) {
-        const stateIndex = state + 1;
-        newRef.current.style.transform = `translate(-1060px)`;
-        setState(stateIndex);
-      }
-      if (state === 2) {
-        const stateIndex = state + 1;
-        newRef.current.style.transform = `translate(-1140px)`;
-        setState(stateIndex);
+      if (width >= 1270) {
+        if (state === 0) {
+          const stateIndex = state + 1;
+          newRef.current.style.transform = `translate(-570px)`;
+          setState(stateIndex);
+        }
+        if (state === 1) {
+          const stateIndex = state + 1;
+          newRef.current.style.transform = `translate(-1060px)`;
+          setState(stateIndex);
+        }
+        if (state === 2) {
+          const stateIndex = state + 1;
+          newRef.current.style.transform = `translate(-1140px)`;
+          setState(stateIndex);
+        }
       }
     }
   };
@@ -113,69 +116,71 @@ const Testimonial = () => {
     //   setState(stateIndex);
     //   setUnscroll(true);
     // } else {
-    if (state === 1) {
-      const stateIndex = state - 1;
-      newRef.current.style.transform = `translate(5px)`;
-      setState(stateIndex);
-    }
-    if (width < 405 && width > 255) {
-      if (state === 2) {
+    if (!leftArrow) {
+      if (state === 1) {
         const stateIndex = state - 1;
-        newRef.current.style.transform = `translate(-310px)`;
+        newRef.current.style.transform = `translate(5px)`;
         setState(stateIndex);
       }
-      if (state === 3) {
-        const stateIndex = state - 1;
-        newRef.current.style.transform = `translate(-640px)`;
-        setState(stateIndex);
+      if (width < 405 && width > 255) {
+        if (state === 2) {
+          const stateIndex = state - 1;
+          newRef.current.style.transform = `translate(-310px)`;
+          setState(stateIndex);
+        }
+        if (state === 3) {
+          const stateIndex = state - 1;
+          newRef.current.style.transform = `translate(-640px)`;
+          setState(stateIndex);
+        }
       }
-    }
-    if (width < 650 && width > 405) {
-      if (state === 2) {
-        const stateIndex = state - 1;
-        newRef.current.style.transform = `translate(-340px)`;
-        setState(stateIndex);
+      if (width < 650 && width > 405) {
+        if (state === 2) {
+          const stateIndex = state - 1;
+          newRef.current.style.transform = `translate(-340px)`;
+          setState(stateIndex);
+        }
+        if (state === 3) {
+          const stateIndex = state - 1;
+          newRef.current.style.transform = `translate(-720px)`;
+          setState(stateIndex);
+        }
       }
-      if (state === 3) {
-        const stateIndex = state - 1;
-        newRef.current.style.transform = `translate(-720px)`;
-        setState(stateIndex);
+      if (width < 1020 && width > 650) {
+        if (state === 2) {
+          const stateIndex = state - 1;
+          newRef.current.style.transform = `translate(-300px)`;
+          setState(stateIndex);
+        }
+        if (state === 3) {
+          const stateIndex = state - 1;
+          newRef.current.style.transform = `translate(-600px)`;
+          setState(stateIndex);
+        }
       }
-    }
-    if (width < 1020 && width > 650) {
-      if (state === 2) {
-        const stateIndex = state - 1;
-        newRef.current.style.transform = `translate(-300px)`;
-        setState(stateIndex);
+      if (width < 1270 && width > 1020) {
+        if (state === 2) {
+          const stateIndex = state - 1;
+          newRef.current.style.transform = `translate(-570px)`;
+          setState(stateIndex);
+        }
+        if (state === 3) {
+          const stateIndex = state - 1;
+          newRef.current.style.transform = `translate(-960px)`;
+          setState(stateIndex);
+        }
       }
-      if (state === 3) {
-        const stateIndex = state - 1;
-        newRef.current.style.transform = `translate(-600px)`;
-        setState(stateIndex);
-      }
-    }
-    if (width < 1270 && width > 1020) {
-      if (state === 2) {
-        const stateIndex = state - 1;
-        newRef.current.style.transform = `translate(-570px)`;
-        setState(stateIndex);
-      }
-      if (state === 3) {
-        const stateIndex = state - 1;
-        newRef.current.style.transform = `translate(-960px)`;
-        setState(stateIndex);
-      }
-    }
-    if (width >= 1270) {
-      if (state === 2) {
-        const stateIndex = state - 1;
-        newRef.current.style.transform = `translate(-570px)`;
-        setState(stateIndex);
-      }
-      if (state === 3) {
-        const stateIndex = state - 1;
-        newRef.current.style.transform = `translate(-760px)`;
-        setState(stateIndex);
+      if (width >= 1270) {
+        if (state === 2) {
+          const stateIndex = state - 1;
+          newRef.current.style.transform = `translate(-570px)`;
+          setState(stateIndex);
+        }
+        if (state === 3) {
+          const stateIndex = state - 1;
+          newRef.current.style.transform = `translate(-760px)`;
+          setState(stateIndex);
+        }
       }
     }
     // if (state !== 0) {
@@ -264,6 +269,26 @@ const Testimonial = () => {
     }
   }, [state]);
 
+  const config = {
+    delta: 10,
+    preventDefaultTouchmoveEvent: false,
+    trackTouch: true,
+    trackMouse: true,
+    rotationAngle: 0,
+  };
+
+  const handlers = useSwipeable({
+    onSwipedLeft: () => {
+      handleRight();
+      // console.log("left swipe");
+    },
+    onSwipedRight: () => {
+      handleLeft();
+      // console.log("right swipe");
+    },
+    ...config,
+  });
+
   React.useEffect(() => {
     Aos.init({ duration: 500 });
   });
@@ -298,10 +323,10 @@ const Testimonial = () => {
         </div>
         {/* onMouseOver={() => setUnscroll(false)} */}
         <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-          <div className="slider">
+          <div className="slider" {...handlers}>
             <div className={`slide`} ref={newRef}>
-            <div className="testBox">
-                <p>
+              <div className="testBox noselect">
+                <p className="noselect">
                   It has been an absolute pleasure working with Raj, Jeet and
                   the team at Sugarlogger. They went out of the way to include
                   our suggestions on the website design and layout while
@@ -313,13 +338,13 @@ const Testimonial = () => {
                 <div className="testDetails">
                   <img src={testimon} alt="Saurabh Nayyar" />
                   <div className="dataVal">
-                    <h5>Saurabh Nayyar</h5>
-                    <p className="detail">Docbel Health</p>
+                    <h5 className="noselect">Saurabh Nayyar</h5>
+                    <p className="detail noselect">Docbel Health</p>
                   </div>
                 </div>
               </div>
-              <div className="testBox">
-                <p>
+              <div className="testBox noselect">
+                <p className="noselect">
                   Web development that is both reliable and affordable. The team
                   at Sugarlogger tech is particularly gifted at turning their
                   clients’ rough-sketch visions into glossy, combat-ready web
@@ -329,13 +354,13 @@ const Testimonial = () => {
                 <div className="testDetails">
                   <img src={onkar} alt="Rohit Onkar" />
                   <div className="dataVal">
-                    <h5>Rohit Onkar</h5>
-                    <p className="detail">Research & Ranking</p>
+                    <h5 className="noselect">Rohit Onkar</h5>
+                    <p className="detail noselect">Research & Ranking</p>
                   </div>
                 </div>
               </div>
-              <div className="testBox">
-                <p>
+              <div className="testBox noselect">
+                <p className="noselect">
                   Sugarlogger Tech has done a wonderful job redesigning our
                   website to take it from plain and functional to amazingly
                   professional. We would highly recommend Sugarlogger Tech to
@@ -345,8 +370,8 @@ const Testimonial = () => {
                 <div className="testDetails">
                   <img src={rajeev} alt="Rajeev Chakrabarti" />
                   <div className="dataVal">
-                    <h5>Rajeev Chakrabarti</h5>
-                    <p className="detail">Mirana Resort</p>
+                    <h5 className="noselect">Rajeev Chakrabarti</h5>
+                    <p className="detail noselect">Mirana Resort</p>
                   </div>
                 </div>
               </div>

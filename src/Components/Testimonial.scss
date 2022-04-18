@@ -2,6 +2,22 @@
   .container {
     padding: 80px 0 110px;
 
+    .noselect {
+      -webkit-touch-callout: none;
+      /* iOS Safari */
+      -webkit-user-select: none;
+      /* Safari */
+      -khtml-user-select: none;
+      /* Konqueror HTML */
+      -moz-user-select: none;
+      /* Old versions of Firefox */
+      -ms-user-select: none;
+      /* Internet Explorer/Edge */
+      user-select: none;
+      /* Non-prefixed version, currently
+        supported by Chrome, Opera and Firefox */
+    }
+
     .menu-wrapper {
       position: relative;
       // max-width: 900px;
@@ -184,11 +200,13 @@
               line-height: 21px;
             }
           }
+
           @media (max-width: 406px) {
-            .dataVal{
+            .dataVal {
               width: 80%;
               padding-left: 15px;
-              h5{
+
+              h5 {
                 width: 80%;
                 word-break: break-word;
                 white-space: break-spaces;
@@ -414,10 +432,10 @@
 
             @media (max-width: 406px) {
               flex: 0 0 300px !important;
-              max-height: 440px !important;
+              max-height: 480px !important;
 
               &:first-child {
-                height: 440px !important;
+                height: 480px !important;
               }
             }
 
@@ -443,6 +461,19 @@
                 .detail {
                   font-size: 14px;
                   line-height: 21px;
+                }
+              }
+
+              @media (max-width: 406px) {
+                .dataVal {
+                  width: 80%;
+                  padding-left: 15px;
+
+                  h5 {
+                    width: 80%;
+                    word-break: break-word;
+                    white-space: break-spaces;
+                  }
                 }
               }
             }
