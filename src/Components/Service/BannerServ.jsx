@@ -1,6 +1,7 @@
 import React from "react";
 import "./BannerServ.scss";
-import banner from "../../images/service.png";
+// import banner from "../../images/service.png";
+import banner from "../../images/service.webp";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import LazyLoad from "react-lazyload";

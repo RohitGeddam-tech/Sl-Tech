@@ -63,7 +63,13 @@
           line-height: 27px;
         }
       }
-      @media (max-width: 650px) {
+      @media (max-width: 1305px) {
+        justify-content: space-between;
+      }
+      @media (max-width: 1000px) {
+        justify-content: space-around;
+      }
+      @media (max-width: 660px) {
         flex-flow: column;
         padding: 30px 0 70px;
         .teamBox {

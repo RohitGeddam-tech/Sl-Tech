@@ -1,13 +1,13 @@
-import alok from "../../images/alok.png";
-import jeet from "../../images/jeet.png";
-import kiran from "../../images/kiran.png";
-import rajsir from "../../images/rajsir.png";
-import darshan from "../../images/darshan.png";
+import alok from "../../images/alok.webp";
+import jeet from "../../images/jeet.webp";
+import kiran from "../../images/kiran.webp";
+import rajsir from "../../images/rajsir.webp";
+import darshan from "../../images/darshan.webp";
 // import darshan from "../../images/darshan2.jpeg";
-import manish from "../../images/manish.png";
+import manish from "../../images/manish.webp";
 import jeremy from "../../images/jeremy.png";
-import anujita from "../../images/anujita.png";
-// import rohit from "../../images/rohitDop.jpg";
+import anujita from "../../images/anujita.webp";
+import priyanka from "../../images/Priyanka.png";
 import rohit from "../../images/rohiDefault.webp";
 
 const teamData = [
@@ -48,12 +48,6 @@ const teamData = [
     text: "Rohit is a super-absorbent sponge, taking on anything to do with front-end web tech. He is just determined to become the next one-man Wikipedia at the rate he's learning new skills. ",
   },
   {
-    img: anujita,
-    name: "Priyanka Shetty",
-    title: "Client / Marketing",
-    text: "Priyanka is our client and marketing safety net, a digital communications guru who never lets anything slip between the cracks. She left her old career and took a chance with us because in her words, “Nothing ever went wrong at my old job, and here, you guys always keep me busy”.",
-  },
-  {
     img: manish,
     name: "Manish Porwal",
     title: "DIRECTOR",
@@ -70,6 +64,12 @@ const teamData = [
     name: "Rajkumar Remalli",
     title: "DIRECTOR",
     text: "Has there ever been a day where you haven’t seen Raj with a huge smile on his face? Like, ever? Rajkumar exemplifies calm under pressure, which makes sense because he’s been everywhere and done everything. With 27 years of media experience, as well as starting Magicbricks and Delhi Times for Times of India, we’re always going to listen to what he says.",
+  },
+  {
+    img: priyanka,
+    name: "Priyanka Shetty",
+    title: "Client / Marketing",
+    text: "Priyanka is our client and marketing safety net, a digital communications guru who never lets anything slip between the cracks. She left her old career and took a chance with us because in her words, “Nothing ever went wrong at my old job, and here, you guys always keep me busy”.",
   },
 ];
 

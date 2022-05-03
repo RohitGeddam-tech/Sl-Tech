@@ -12,7 +12,7 @@ import ill from "../../images/ill.png";
 import figma from "../../images/figma.png";
 import "./Tech.scss";
 import Aos from "aos";
-import LazyLoad from "react-lazyload";
+// import LazyLoad from "react-lazyload";
 
 const data = [
   {
@@ -93,13 +93,13 @@ const Tech = () => {
               className={skills === "design" ? "tabs a activeTab" : "tabs a"}
               onClick={() => setSkills("design")}
             >
-              Design & Animation
+              <span>Design & Animation</span>
             </button>
             <button
               className={skills === "develop" ? "tabs b activeTab" : "tabs b"}
               onClick={() => setSkills("develop")}
             >
-              Development
+              <span>Development</span>
             </button>
           </div>
           <div className="divider"></div>
@@ -122,7 +122,7 @@ const Tech = () => {
                     once
                     placeholder={<div className="imgBanner"></div>}
                   > */}
-                    <img src={doc.img} alt={doc.text} />
+                  <img src={doc.img} alt={doc.text} />
                   {/* </LazyLoad> */}
                   <p>{doc.text}</p>
                 </div>
